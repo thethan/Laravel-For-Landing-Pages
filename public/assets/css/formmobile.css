@@ -1,0 +1,195 @@
+/* CSS Document */
+aside {
+	margin:-21em 0 0 0;
+	}
+
+ header h3, h3 {
+	 font-style:none;
+	 }
+#formbox
+{
+  background: #000;
+  width: 100%;
+  margin-bottom: 3em;
+  text-transform:uppercase;
+  border-radius:10px;
+  text-spacing:22px;
+  ont-family:'Univers LT W01 55 Roman';
+
+}
+
+#formbox h3 {
+	color:#FFF;
+	font-family:"UniversLTW01-39ThinUltr";
+	text-align:center;
+	text-transform:uppercase;
+	margin:.3em 0;
+	font-size:32px;
+	font-style:normal;
+  	padding: .5em 0;
+	letter-spacing:2px;
+  	margin:1px 0;
+}
+#formbox h3 span {
+	
+	font-family:'Univers LT W01 75 Black';
+	text-transform:uppercase;
+}
+
+.styled-select input.half{
+	
+	 border: 1px solid #ffffff;
+	
+	  background:#fff;
+	}
+
+#rfiform .col-md-12{
+		margin:.4em 0;
+	}
+#rfiform .col-md-12 .mobilenames:first-child{
+		margin:0 0 .4em 0;
+		background:#fff;
+	}	
+#formbox div {
+	margin: .6em 0;
+	
+}
+#formbox div div {
+	margin: 0em 0;
+	
+}
+form input {
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	
+	}
+#formbox div p {
+		font-size:10px;
+		font-style:italic;
+	}
+.styled-select select, .styled-select input {
+	padding: 0px .5em;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   color:#000;
+   margin:0 auto;
+   -webkit-appearance: none;
+   text-transform:uppercase;
+   width:100%;
+   }
+   
+.styled-select {
+   overflow: hidden;
+   background:url('../img/select-bkgd.jpg');
+   background-size:100% 50%;
+   
+   }
+
+ .styles-select input {
+     background: url(new_arrow.png) no-repeat right #fff;
+	  }
+.styled-select.noback {
+	border:none;
+    background: url(new_arrow.png) no-repeat;
+   }
+.styled-select .col-md-6 {
+	padding-left:0px;
+	padding-right:0px;
+	}
+.styled-select .col-md-6 input {
+	width:96%;
+	background:#fff;
+	}
+
+select.error {
+	color:#F00;
+	background:#fff;
+	}
+label.error {
+	background:#000;
+	width:100%;
+	color:#f00;
+	margin-bottom:0px;
+	}
+  .selectDiv {
+   color:
+   	width: 100%;
+    line-height:34px;
+  	overflow: hidden;
+    margin:0px;
+    padding:0px;
+    position: relative;
+    z-index:100;
+    
+   }
+.selectDefault {
+    padding-left:8px;
+}
+
+.selectDiv select {
+	
+   margin:0px;
+   padding:0px;
+    opacity:0;
+    filter:alpha(opacity=0);
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:block;
+    z-index:101;
+}
+.selectDiv select:focus {
+    outline: none;
+}
+#formSubmission {
+		border:2px solid #fff;
+		background:#000 url('../img/right-arrow.png') no-repeat;
+		background-size:12px;
+		background-position:97% center;
+		color:#fff;
+		padding:.5em  0 .5em .5em;
+		font-size:12px;
+		border-radius:0px;
+		-moz-border-radius:0px;
+		-webkit-border-radius:0px;
+		text-transform:uppercase;
+		font-family:'UniversLTW01-67BoldCn';
+		float:right;
+		text-align:left;
+		margin:1em 0;
+	}
+.selectDefault, .selectDiv option {
+	color:#c3c3c3;
+    font-size:16px;
+    }
+.valid option, span.valid {
+	color:#000;
+	}
+
+#omni #formbox h3 span, #omni #formSubmission, #military #formbox h3 span, #military #formSubmission {
+	color:#dbc32d;
+	}
+	
+#run-loading {
+		display:none;
+		background:rgba(0,0,0, .5);
+		width:100%;
+		height:100$;
+		position:relative;
+		z-index:1000;
+		
+	}
+	.opacity {
+		opacity:.5;
+		
+		}
+#rfiform {
+
+	text-transform:uppercase;
+}

@@ -1,0 +1,672 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+		margin:0px 0 0 0;
+	}
+.row {
+		margin:0;
+	}
+ header {
+	 	background: #000;
+		color:#fff;
+	    font-family:'Sabon LT W01 Roman';
+		margin-top:0px;
+	 }
+header h2 {
+	 	text-align:center;
+		font-weight:300;
+		margin:.3em 0;
+		text-transform:uppercase;
+		font-family:'Sabon LT W01 Roman';
+		font-size:30px;
+	 }
+header h2 span {
+		font-family:'Sabon LT W01 Roman';
+		font-weight:700;
+	}
+header h2 span.reg {
+		font-weight:normal;
+		vertical-align:super;
+		font-size:12px;
+	}
+header h3 {
+		font-family:'Sabon LT W01 Italic';
+		font-weight: normal;
+		text-align:center;
+		
+	}
+header .icon {
+		margin:0 6px 0 0;
+		text-indent:25px;
+		text-align:center;
+		background-repeat:no-repeat;
+
+	}
+
+h1 {
+		font-family:'UniversLTW01-39ThinUltr';
+		text-transform:uppercase;
+		font-size:95px;
+		margin:0 0 15px;
+		padding-left:4em;
+	}
+.description {
+		background:#fff;
+		color:#000;
+		padding: .2em ;
+	}
+	
+.phone {
+		color: #fff;
+		background:#000;
+		font-family:'Univers LT W01 65 Bold';
+	}	
+.phone a {
+		color: #fff;
+		font-family:'Univers LT W01 65 Bold';
+		height:45px;
+	}
+.panel-body h2 {
+	  font-family:'UniversLTW01-39ThinUltr';
+	}
+a:hover
+{
+  text-decoration:none;
+}
+ .panel 
+{
+margin:0;
+background: #fbfbfb; /* Old browsers */
+background: -moz-linear-gradient(top, #fbfbfb 0%, #f1f1f1 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbfbfb), color-stop(100%,#f1f1f1)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #fbfbfb 0%,#f1f1f1 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #fbfbfb 0%,#f1f1f1 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #fbfbfb 0%,#f1f1f1 100%); /* IE10+ */
+background: linear-gradient(to bottom, #fbfbfb 0%,#f1f1f1 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbfb', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */
+}
+.panel-group .panel+.panel {
+		margin:0;
+	}
+.panel-heading, .panel-group .panel {
+		border-radius:0px;
+	}
+h3
+{
+	font-size:24px;
+	font-family:"UniversLTW01-47LightCn";
+	font-weight:400;
+	padding-left:1.5em;
+	padding-right:1.5em;
+}
+
+h4
+{
+	
+	margin:5px 0;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	font-family:"UniversLTW01-53";
+	background-repeat: no-repeat;
+	background-size: 26px;
+}
+#callus{
+	background:#000;
+	
+}
+#callus h4 a{
+	font-family:'Univers LT W01 65 Bold';
+
+	line-height:40px;
+}
+	
+.panel-heading h4 {
+		text-indent: 35px;
+		font-family:'UniversLTW01-53Extended';
+		background-position:left center;
+		text-transform:uppercase;
+		font-size:16px;
+		font-weight:100;
+		line-height:48px;
+	}
+
+h4.rfi {
+	background-image:url('../img/icons/requestfreeinformation.png');
+	}
+.open h4.rfi {
+		color:#FFF;
+		background-image:url('../img/open/requestfreeinformation.png');
+	}
+.open h4.highlighted {
+		color:#FFF;
+		background-image:url('../img/open/highlightedcourses.png');
+	}
+.open h4.gearandsoftware {
+		color:#FFF;
+		background-image:url('../img/open/gearandsoftware.png');
+	}
+.open h4.careers {
+		color:#FFF;
+		background-image:url('../img/open/careers.png');
+	}
+.open h4.aboutprogram {
+		color:#FFF;
+		background-image:url('../img/open/aboutthisprogram.png');
+	}
+.open h4.campus {
+		color:#FFF;
+		background-image:url('../img/open/campus.png');
+	}
+h4.aboutprogram {
+	background-image:url("../img/icons/aboutthisprogram.png");
+	}
+h4.highlighted {
+	background-image:url("../img/icons/highlightedcourses.png");
+	}
+h4.gearandsoftware {
+	background-image: url("../img/icons/gearandsoftware.png");
+}
+h4.careers {
+	background-image: url("../img/icons/careers.png");
+	}
+h4.campus {
+	background-image: url("../img/icons/campus.png");
+	}
+
+
+#grad
+{
+	background:#f2f2f2;
+}
+
+#aboutthisprogram {
+
+
+    background-color: #f6f6f6;
+    width: 900px;
+    height: 50px;
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+#highlightedcourses {
+    background-color: #f6f6f6;
+    width: 900px;
+    height: 50px;
+}
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration:none;
+}
+
+#careerpossibilities {
+    background-color: #f6f6f6;
+    width: 900px;
+    height: 50px;
+}
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+#gearandsoftware {
+    background-color: #f6f6f6;
+    width: 900px;
+    height: 50px;
+}
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+#presstocall {
+    background-color: #f6f6f6;
+    width: 900px;
+    height: 50px;
+}
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+.panel-group .panel-heading+.panel-collapse .panel-body
+{
+	border-top:0px;
+}
+
+.panel-body
+{
+	background-color:#000000;
+	color:#FFF;
+}
+.panel
+{
+border:none;
+}
+
+
+h5
+{
+font-size:72px;
+text-transform:uppercase;
+font-family:"UniversLTW01-39ThinUltr";
+}
+h6
+{
+	font-size:24px;
+	font-family:"UniversLTW01-47LightCn";
+}
+
+
+footer
+{
+color:#F6F6F6;
+background-color:#000000;
+font-family:"UniversLTW01-47LightCn";
+}
+
+footer a, footer a:visited {
+	color:#F6F6F6;
+	text-decoration:none
+	}
+
+/* PROGRAMS */
+
+/* FILM */
+#film-mobile .icon 
+{
+	background-image: url('../img/icons/film.png');
+}
+#film-mobile .open h4.aboutprogram {
+	background-image: url('../img/open/film/aboutthisprogram.png');
+}
+
+#film-mobile h1
+{
+	color:#2ba4ff;
+}	
+#film-mobile h5
+{
+	color:#2ba4ff;
+}
+#film-mobile #callus a
+{
+	background-image: url('../img/icons/omni/callus/film.png'),
+	url('../img/icons/omni/arrows/film.png');
+	background-position: 1% center, 95% center;
+	background-size: 25px 25px, 11px 21px;
+	background-repeat:no-repeat;
+}
+#film-mobile #callus a
+{
+	text-indent:32px;
+	color:#2ba4ff;
+	font-weight:400;
+}
+#film-mobile  .panel .open 
+{
+background: rgb(10,105,243);
+
+background: -moz-linear-gradient(top,  rgba(10,105,243,1) 0%, rgba(7,84,201,1) 100%);
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(10,105,243,1)), color-stop(100%,rgba(7,84,201,1)));
+
+background: -webkit-linear-gradient(top,  rgba(10,105,243,1) 0%,rgba(7,84,201,1) 100%);
+
+background: -o-linear-gradient(top,  rgba(10,105,243,1) 0%,rgba(7,84,201,1) 100%);
+
+background: -ms-linear-gradient(top,  rgba(10,105,243,1) 0%,rgba(7,84,201,1) 100%);
+
+background: linear-gradient(to bottom,  rgba(10,105,243,1) 0%,rgba(7,84,201,1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a69f3', endColorstr='#0754c9',GradientType=0 );
+}
+
+/* RECORDING ARTS */ 
+#recording-arts-mobile .icon 
+{
+	background-image: url('../img/icons/audio.png');
+}
+#recording-arts-mobile h4.aboutprogram {
+	background-image: url('../img/icons/omni/audio.png');
+}
+#recording-arts-mobile .open h4.aboutprogram {
+	background-image: url('../img/open/audio/aboutthisprogram.png');
+}
+
+#recording-arts-mobile h1
+{
+	color:#c50008;
+}	
+
+#recording-arts-mobile h5
+{
+	color:#c50008;
+}
+#recording-arts-mobile #callus a
+{
+	background-image: url('../img/icons/callus/audio.png'),
+	url('../img/icons/omni/arrows/audio.png');
+	background-position: 1% center, 95% center;
+	background-size: 25px 25px, 11px 21px;
+	background-repeat:no-repeat;
+}
+#recording-arts-mobile #callus a
+{
+	text-indent:32px;
+	color:#c50008;
+	font-weight:400;
+}
+#recording-arts-mobile  .panel .open 
+{
+	background: rgb(220,0,9);
+
+background: -moz-linear-gradient(top,  rgba(220,0,9,1) 0%, rgba(192,0,8,1) 100%);
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(220,0,9,1)), color-stop(100%,rgba(192,0,8,1)));
+
+background: -webkit-linear-gradient(top,  rgba(220,0,9,1) 0%,rgba(192,0,8,1) 100%);
+
+background: -o-linear-gradient(top,  rgba(220,0,9,1) 0%,rgba(192,0,8,1) 100%);
+
+background: -ms-linear-gradient(top,  rgba(220,0,9,1) 0%,rgba(192,0,8,1) 100%);
+
+background: linear-gradient(to bottom,  rgba(220,0,9,1) 0%,rgba(192,0,8,1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc0009', endColorstr='#c00008',GradientType=0 );
+
+
+}
+
+/* Entertainment Business */ 
+/*	
+#business-mobile .icon 
+{
+	background-image: url('../img/icons/film.png');
+}
+*/
+#business-mobile .open h4.aboutprogram {
+	background-image: url('../img/open/business/aboutthisprogram.png');
+}
+#business-mobile  h4.aboutprogram {
+	background-image: url('../img/icons/omni/business.png');
+}
+
+#business-mobile #callus a
+{
+	background-image:url("../img/icons/business.png");
+	background-repeat:no-repeat;
+	background-size:25px;
+	color:#9d81d1;
+}
+#game-mobile h4.aboutprogram {
+	background-image: url('../img/open/game/aboutthisprogram.png');
+}
+#game-mobile  h4.aboutprogram {
+	background-image: url('../img/icons/omni/game.png');
+}
+
+#business-mobile h1
+{
+	color:#9d81d1;
+}	
+
+#business-mobile h5
+{
+	color:#9d81d1;
+}
+#business-mobile #callus a
+{
+	background-image: url('../img/icons/callus/business.png'),
+	url('../img/icons/omni/arrows/business.png');
+	background-position: 1% center, 95% center;
+	background-size: 25px 25px, 11px 21px;
+	background-repeat:no-repeat;
+}
+#business-mobile #callus a
+{
+	text-indent:32px;
+	color:#9d81d1;
+	font-weight:400;
+}
+#business-mobile  .panel .open 
+{
+background: rgb(159,131,211);
+
+background: -moz-linear-gradient(top,  rgba(159,131,211,1) 0%, rgba(140,115,186,1) 100%);
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(159,131,211,1)), color-stop(100%,rgba(140,115,186,1)));
+
+background: -webkit-linear-gradient(top,  rgba(159,131,211,1) 0%,rgba(140,115,186,1) 100%);
+
+background: -o-linear-gradient(top,  rgba(159,131,211,1) 0%,rgba(140,115,186,1) 100%);
+
+background: -ms-linear-gradient(top,  rgba(159,131,211,1) 0%,rgba(140,115,186,1) 100%);
+
+background: linear-gradient(to bottom,  rgba(159,131,211,1) 0%,rgba(140,115,186,1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9f83d3', endColorstr='#8c73ba',GradientType=0 );
+}
+
+/* MP */ 	
+/*
+#mp-mobile .icon 
+{
+	background-image: url('../img/icons/film.png');
+}
+*/
+#mp-mobile .open h4.aboutprogram {
+	background-image: url('../img/open/mp/aboutthisprogram.png');
+}
+#mp-mobile  h4.aboutprogram {
+	background-image: url('../img/icons/omni/mp.png');
+}
+
+#mp-mobile h1
+{
+	color:#e11f76;
+}	
+
+#mp-mobile h5
+{
+	color:#e11f76;
+}
+#mp-mobile #callus a
+{
+	background-image: url('../img/icons/callus/musicproduction.png'),
+	url('../img/icons/omni/arrows/mp.png');
+	background-position: 1% center, 95% center;
+	background-size: 25px 25px, 11px 21px;
+	background-repeat:no-repeat;
+}
+#mp-mobile #callus a
+{
+	text-indent:32px;
+	color:#e82079;
+	font-weight:400;
+}
+#mp-mobile  .panel .open 
+{
+	background: rgb(230,32,120);
+
+background: -moz-linear-gradient(top,  rgba(230,32,120,1) 0%, rgba(201,28,106,1) 100%);
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(230,32,120,1)), color-stop(100%,rgba(201,28,106,1)));
+
+background: -webkit-linear-gradient(top,  rgba(230,32,120,1) 0%,rgba(201,28,106,1) 100%);
+
+background: -o-linear-gradient(top,  rgba(230,32,120,1) 0%,rgba(201,28,106,1) 100%);
+
+background: -ms-linear-gradient(top,  rgba(230,32,120,1) 0%,rgba(201,28,106,1) 100%);
+
+background: linear-gradient(to bottom,  rgba(230,32,120,1) 0%,rgba(201,28,106,1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e62078', endColorstr='#c91c6a',GradientType=0 );
+}
+
+/* ANIMATION */ 
+/*
+#animation-mobile .icon 
+{
+	background-image: url('../img/icons/film.png');
+}
+*/
+#animation-mobile .open h4.aboutprogram {
+	background-image: url('../img/open/animation/aboutthisprogram.png');
+}
+#animation-mobile  h4.aboutprogram {
+	background-image: url('../img/icons/omni/animation.png');
+}
+#animation-mobile #callus a
+{
+	background-image: url('../img/icons/callus/animation.png'),
+	url('../img/icons/callus/arrows/animation.png');
+	background-position: 1% center, 95% center;
+	background-size: 25px 25px, 11px 21px;
+	background-repeat:no-repeat;
+}
+#animation-mobile #callus a
+{
+	text-indent:32px;
+	color:#fcbb18;
+	font-weight:400;
+}
+#animation-mobile h1
+{
+	color:#fcbb18;
+}	
+
+#animation-mobile h5
+{
+	color:#fcbb18;
+}
+#animation-mobile  .panel .open 
+{
+background: rgb(248,184,24);
+
+background: -moz-linear-gradient(top,  rgba(248,184,24,1) 0%, rgba(231,172,22,1) 100%);
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(248,184,24,1)), color-stop(100%,rgba(231,172,22,1)));
+
+background: -webkit-linear-gradient(top,  rgba(248,184,24,1) 0%,rgba(231,172,22,1) 100%);
+
+background: -o-linear-gradient(top,  rgba(248,184,24,1) 0%,rgba(231,172,22,1) 100%);
+
+background: -ms-linear-gradient(top,  rgba(248,184,24,1) 0%,rgba(231,172,22,1) 100%);
+
+background: linear-gradient(to bottom,  rgba(248,184,24,1) 0%,rgba(231,172,22,1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8b818', endColorstr='#e7ac16',GradientType=0 );
+}
+
+/* GAME PRODUCTION */ 
+/*	
+#game-mobile .icon 
+{
+	background-image: url('../img/icons/game.png');
+			background-position:14%;
+}
+*/
+#game-mobile .open h4.aboutprogram {
+	background-image: url('../img/open/gameproduction/aboutthisprogram.png');
+}
+#game-mobile  h4.aboutprogram {
+	background-image: url('../img/icons/omni/gameproduction.png');
+}
+#game-mobile #callus a
+{
+	background-image: url('../img/icons/callus/gameproduction.png'),
+	url('../img/icons/callus/arrows/gameproduction.png');
+	background-position: 1% center, 95% center;
+	background-size: 25px 25px, 11px 21px;
+	background-repeat:no-repeat;
+}
+
+#game-mobile #callus a
+{
+	text-indent:32px;
+	color:#21ca1d;
+	font-weight:400;
+}
+
+#game-mobile h1
+{
+	color:#20c41c;
+}	
+
+#game-mobile h5
+{
+	color:#20c41c;
+}
+#game-mobile  .panel .open 
+{
+	background: rgb(32,196,28);
+
+background: -moz-linear-gradient(top,  rgba(32,196,28,1) 0%, rgba(28,175,25,1) 100%);
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(32,196,28,1)), color-stop(100%,rgba(28,175,25,1)));
+
+background: -webkit-linear-gradient(top,  rgba(32,196,28,1) 0%,rgba(28,175,25,1) 100%);
+
+background: -o-linear-gradient(top,  rgba(32,196,28,1) 0%,rgba(28,175,25,1) 100%);
+
+background: -ms-linear-gradient(top,  rgba(32,196,28,1) 0%,rgba(28,175,25,1) 100%);
+
+background: linear-gradient(to bottom,  rgba(32,196,28,1) 0%,rgba(28,175,25,1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20c41c', endColorstr='#1caf19',GradientType=0 );
+
+
+}
+
+/* OMNI */ 
+#mobile-omni .icon 
+{
+	background-image: url('../img/icons/film.png');
+}
+
+#mobile-omni #callus a
+{
+
+	color:#ddcf7f;
+}
+#mobile-omni h1
+{
+	color:#ddcf7f;
+}	
+
+#mobile-omni h5
+{
+	color:#ddcf7f;
+}
+#mobile-omni  .panel .open 
+{
+background: rgb(223,210,129);
+
+background: -moz-linear-gradient(top,  rgba(223,210,129,1) 0%, rgba(208,196,121,1) 100%);
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(223,210,129,1)), color-stop(100%,rgba(208,196,121,1)));
+
+background: -webkit-linear-gradient(top,  rgba(223,210,129,1) 0%,rgba(208,196,121,1) 100%);
+
+background: -o-linear-gradient(top,  rgba(223,210,129,1) 0%,rgba(208,196,121,1) 100%);
+
+background: -ms-linear-gradient(top,  rgba(223,210,129,1) 0%,rgba(208,196,121,1) 100%);
+
+background: linear-gradient(to bottom,  rgba(223,210,129,1) 0%,rgba(208,196,121,1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfd281', endColorstr='#d0c479',GradientType=0 );
+}

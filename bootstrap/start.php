@@ -26,7 +26,9 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('your-machine-name'),
+    'local' => array('landingv1.local'), // Change this to your local machine hostname.
+    'staging' => array('lamediaschool.com'),
+    'production' => array('go.lafilm.edu'),
 
 ));
 

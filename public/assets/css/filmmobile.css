@@ -1,0 +1,65 @@
+
+/* Fonts */
+@font-face{
+  font-family: Sabon;
+  src: url(fonts/Sabon/Sabon.woff);
+}
+
+@font-face{
+  font-family: SabonItalic;
+  src: url(fonts/Sabon/Sabon-Italic.woff);
+}
+
+/* Colors */
+body 
+{
+  background: url("../img/bkgd-landing.jpg") no-repeat 50% 0;
+  background-size:100%; 
+  background-attachment:fixed;
+  font-family: "UniversLTW01-47LightCn";
+}
+
+section.container
+{
+  background: #ffffff;
+}
+ header 
+{
+  background: #000;
+  color:#fff;
+  padding: .5em;
+ }
+
+ header #icon 
+ {
+	 background-repeat:no-repeat;
+ 		height:28px;
+		width:28px;
+		background-size:cover;
+ }
+
+  .iosSlider img
+  {
+    width: 100%;
+    height:100%;
+  }
+ 
+ aside {
+  position: relative;
+  margin-top: -4em;
+  margin-right: 1em;
+  z-index: 2;
+ }
+
+h1
+{
+  font-size:95px;
+  font-family: 'UniversLTW01-39ThinUltr';
+  text-transform: uppercase;
+  font-color:#2ba4ff;
+}
+
+.line-height {
+  line-height: 2em;
+  margin-bottom: 36px;
+}

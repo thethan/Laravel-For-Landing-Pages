@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <script type="text/javascript" src="http://fast.fonts.net/jsapi/b75b8f60-98a5-48c0-9f59-c933fbf22789.js"></script>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+	<meta name = "apple-mobile-web-app-capable" content = "yes" /> 
+			<style type="text/css">
+			.iosSlider {
+				min-width: 100%;
+				height: 380px;
+			}
+			
+			.iosSlider .slider {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.iosSlider .slider .item {
+				position: relative;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #fff;
+				margin: 0 0 0 0;
+				
+			}
+			
+			.iosSlider .slider #item1 
+			{
+				background: url('img/slider/A/image1.png') no-repeat 50% 0 ;
+				background-size:100%;
+				
+			}
+			
+
+			.iosSlider .slider #item2 {
+				background: url('img/slider/A/image2.png')  no-repeat 50% 0;
+				background-size:100%;
+			}
+			
+			.iosSlider .slider #item3 
+			{
+				background: url('img/slider/A/image3.png')  no-repeat 50% 0;
+				background-size:100%;
+			}
+			
+			.iosSlider .slider #item4 
+			{
+				background: url('img/slider/A/image4.png')  no-repeat 50% 0;
+				background-size:100%;
+			}
+
+			.iosSlider .slider #item5 
+			{
+				background: url('img/slider/A/image5.png')  no-repeat 50% 0;
+				background-size:100%;
+			}
+
+			.iosSlider .slider #item6 
+			{
+				background: url('img/slider/A/image6.png')  no-repeat 50% 0;
+				background-size:100%;
+			}
+
+			.iosSlider .slider #item7 
+			{
+				background: url('img/slider/A/image7.png')  no-repeat 50% 0;
+				background-size:100%;
+			}
+
+			.iosSlider .slider #item8 
+			{
+				background: url('img/slider/A/image8.png')  no-repeat 50% 0;
+				background-size:100%;
+			}
+
+			.iosSlider .slider #item9 
+			{
+				background: url('img/slider/A/image9.png')  no-repeat 50% 0;
+				background-size:100%;
+			}
+
+			.iosSlider .slider #item10 
+			{
+				background: url('img/slider/A/image10.png')  no-repeat 50% 0;
+				background-size:100%;
+			}
+
+			.iosSlider .slider #item11 
+			{
+				background: url('img/slider/A/image11.png')  no-repeat 50% 0;
+				background-size:100%;
+			}
+
+			.iosSlider .slider #item12 
+			{
+				background: url('img/slider/A/image12.png')  no-repeat 50% 0;
+				background-size:100%;
+			}
+
+			.iosSlider .slider #item13 
+			{
+				background: url('img/slider/A/image13.png')  no-repeat 50% 0;
+				background-size:100%;
+			}
+
+			.iosSlider .slider #item14 
+			{
+				background: url('img/slider/A/image14.png')  no-repeat 50% 0;
+				background-size:100%;
+			}
+
+
+			.iosSlider .slider .item .text1 
+			{
+				position: absolute;
+				top: 30px;
+				right: 150px;
+				opacity: 0;
+				filter: alpha(opacity:0);
+				background: #000;
+			}
+			
+			.iosSlider .slider .item .text1 span 
+			{
+				color: #fff;
+				font: bold 50px/60px "Helvetica Neue",Helvetica,Arial,sans-serif;
+				padding: 0 8px;
+			}
+			
+			.iosSlider .slider .item .text2 
+			{
+				position: absolute;
+				top: 90px;
+				right: 0;
+				opacity: 0;
+				filter: alpha(opacity:0);
+				background: #000;
+				padding: 5px 7px 7px 7px;
+			}
+			
+			.iosSlider .slider .item .text2 span 
+			{
+				color: #fff;
+				font: normal 16px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;	
+			}
+
+			.iosSliderButtons 
+			{
+				position: absolute;
+				bottom: 10px;
+				left: 10px;
+				width: 600px;
+				height: 15px;
+			}
+			
+			.iosSliderButtons .button {
+				float: left;
+				width: 9px;
+				height: 9px;
+				background: #999;
+				margin: 0 10px 0 0;
+				opacity: 0.25;
+				filter: alpha(opacity:25);
+				border: 1px solid #999;
+				padding: 1px;
+				-webkit-border-radius: 15px;
+
+
+			}
+			
+			.iosSliderButtons .selected 
+			{
+				background: #2ba4ff;
+				opacity: 1;
+				filter: alpha(opacity:100);
+			}
+		</style>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/versiona.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src = "js/jquery.easing-1.3.js"></script>
+	<script src = "js/jquery.iosslider.js"></script>
+
+
+	
+	<script type="text/javascript">
+			$(document).ready(function() {
+			
+				$('.iosSlider').iosSlider({
+					autoSlide: true,
+					scrollbar: false,
+					snapToChildren: true,
+					desktopClickDrag: false,
+					scrollbarLocation: 'top',
+					scrollbarBorderRadius: '0',
+					responsiveSlideWidth: true,
+					navSlideSelector: $('.iosSliderButtons .button'),
+					infiniteSlider: true,
+					onSlideChange: slideContentChange,
+					onSlideComplete: slideContentComplete,
+					onSliderLoaded: slideContentLoaded
+				});
+				
+				function slideContentChange(args) {
+					
+					/* indicator */
+					$(args.sliderObject).parent().find('.iosSliderButtons .button').removeClass('selected');
+					$(args.sliderObject).parent().find('.iosSliderButtons .button:eq(' + (args.currentSlideNumber - 1) + ')').addClass('selected');
+					
+				}
+				
+				function slideContentComplete(args) {
+					
+					if(!args.slideChanged) return false;
+					
+					/* animation */
+					$(args.sliderObject).find('.text1, .text2').attr('style', '');
+					
+					$(args.currentSlideObject).children('.text1').animate({
+						right: '100px',
+						opacity: '1'
+					}, 400, 'easeOutQuint');
+					
+					$(args.currentSlideObject).children('.text2').delay(200).animate({
+						right: '50px',
+						opacity: '1'
+					}, 400, 'easeOutQuint');
+					
+				}
+				
+				function slideContentLoaded(args) {
+					
+					/* animation */
+					$(args.sliderObject).find('.text1, .text2').attr('style', '');
+				
+					$(args.currentSlideObject).children('.text1').animate({
+						right: '100px',
+						opacity: '1'
+					}, 400, 'easeOutQuint');
+					
+					$(args.currentSlideObject).children('.text2').delay(200).animate({
+						right: '50px',
+						opacity: '1'
+					}, 400, 'easeOutQuint');
+					
+					/* indicator */
+					$(args.sliderObject).parent().find('.iosSliderButtons .button').removeClass('selected');
+					$(args.sliderObject).parent().find('.iosSliderButtons .button:eq(' + (args.currentSlideNumber - 1) + ')').addClass('selected');
+					
+				}
+				
+			});
+		</script>
+  </head>
+  <body>
+  	<section class="container">
+  		<header class="row">  			
+  			<div class="col-md-9">
+  				<img class="col-md-1 col-xs-1" src="img/FilmReel.png">
+  					<h2 class="col-md-11 col-xs-11">The Los Angeles Film School 
+  						<span id="college">College of Film</span>
+  					</h2>
+  			</div>
+  			<h3 class="col-md-3"><a href="tel:+13174562564"> CALL NOW! 877-9LA-FILM </a> </h3>
+  		</header>
+
+   <div class = 'iosSlider row'>
+		
+		
+			<div class = 'slider'>
+			
+				<div class = 'item' id = 'item1'>
+
+				</div>
+				
+				<div class = 'item' id = 'item2'>
+					
+					
+				</div>
+				
+				<div class = 'item' id = 'item3'>
+					
+				</div>
+				
+				<div class = 'item' id = 'item4'>
+					
+				</div>
+
+				<div class = 'item' id = 'item5'>
+					
+				</div>
+
+				<div class = 'item' id = 'item6'>
+					
+				</div>
+
+				<div class = 'item' id = 'item7'>
+					
+				</div>
+
+				<div class = 'item' id = 'item8'>
+					
+				</div>
+
+				<div class = 'item' id = 'item9'>
+					
+				</div>
+
+				<div class = 'item' id = 'item10'>
+					
+				</div>
+
+				<div class = 'item' id = 'item11'>
+					
+				</div>
+
+				<div class = 'item' id = 'item12'>
+					
+				</div>
+
+				<div class = 'item' id = 'item13'>
+					
+				</div>
+
+				<div class = 'item' id = 'item14'>
+					
+				</div>
+			
+			</div>
+			
+			<div class = 'iosSliderButtons'>
+				<div class = 'button'></div>
+				<div class = 'button'></div>
+				<div class = 'button'></div>
+				<div class = 'button'></div>
+				<div class = 'button'></div>
+				<div class = 'button'></div>
+				<div class = 'button'></div>
+				<div class = 'button'></div>
+				<div class = 'button'></div>
+				<div class = 'button'></div>
+				<div class = 'button'></div>
+				<div class = 'button'></div>
+				<div class = 'button'></div>
+				<div class = 'button'></div>
+			</div>
+		</div>
+  		<div class="row"> 
+  			<aside class="col-xs-12 col-md-3 pull-right" > 
+	  			<form class="col-md-12  col-xs-12 ">
+					<label>TEST</label>
+					<input value="TEST!" name="test">
+				</form>
+						<div id="launchbox" class="col-md-12 col-xs-12 center-block">
+						<img src="img/Ad.png" id="comp" />
+								<h5>
+									A Laptop for Every Student*
+								</h5>
+										<h6> 	We outfit you with a laptop computer and software package so you can 			take your work anywhere! 
+										</h6>
+							</div>
+			</aside>
+  				<article class="col-md-7 col-md-offset-1 left-col">
+						<h1>
+							Write. Shoot. Direct.
+						</h1>
+					<p class="line-height">
+						Our Film Program is home to <b> artists, </b> <b> storytellers </b> and <b> visionaries.</b> Our students live and breathe cinema and work toward <b> creating a motion picture legacy. </b> When you begin our career-focused and accredited Associate of Science degree program, you join a unique group of people who understand and share that desire. You&apos;ll explore every aspect of modern filmmaking, from pre to post-production and everything in between. <b> Get ready to tell your story. </b> 
+					</p>
+				
+
+			<div class="row">
+				<div class="col-md-6">
+						<div class="col-md-12">
+							<h2> Program: </h2>
+							<h3> 
+									Purse Your Pasysion	
+							</h3>
+
+							<p>An unparalleled, hands-on experience, at our college you learn filmmaking by making films. Our program is built around actual industry workflow. Teachers step off the set to the front of the classroom to give you an immersive education you just can&apos;t get out of a textbook. 
+							</p>
+						</div>
+
+						<div class="col-md-12">
+							<h2> Gear & Software: </h2>
+							<h3> 
+									Lights, Camera, Action 
+							</h3>
+							
+							<p>Shoot with a RED Camera&copy; on our elaborate 3,000 sq. ft. soundstage, then edit at a 12-core, 24-gig Mac Pro Avid Media Composer workstation with three HD Dell Precision displays so you can ake your Hollywood debut in our 345-seat, THX certified, HD RealD&trade; theatre.
+							</p>
+						</div>
+
+						<div class="col-md-12">
+							<h2> Campus: </h2>
+							<h3> 
+									Hollywood is Your Clasttsroom
+							</h3>
+							
+							<p>Your journey begins in the heart of the entertainment capital of the world, on the famous Sunset Boulevard. One block from campus you can fotllow the stars on Hollywood Boulevard&apos;s Walk of Fame, walking distance from some of L.A.&apos;s most important and enduring cultural landmarks. 
+							</p>
+						</div>
+					</div>
+						<div id="careerbox" class="col-md-6">
+
+									<h3> TRAIN FOR A CAREER AS A... </h3>
+										<ul>
+											<li> <p> Director </p> </li>
+											<li> <p> Director of Photography </p> </li>
+											<li> <p> Editor </p> </li>
+											<li> <p> Producer </p> </li>
+											<li> <p> Production Designer </p> </li>
+											<li> <p> Screenwriter </p> </li>
+											<li> <p> Production Coordinator </p> </li>
+											<li> <p> Script Supervisor </p> </li>
+											<li> <p> Script Analyst </p> </li>
+											<li> <p> Boom Operator </p> </li>
+											<li> <p> Best Boy </p> </li>
+											<li> <p> Key Grip </p> </li>
+											<li> <p> Camera Assistant </p> </li>
+										</ul>							
+						</div>
+
+
+
+
+				</div>
+			</article>
+
+
+	<div class="clear"></div>
+	</div>
+	<footer class="row">
+		<p>
+			<center>
+				ACCREDITED BY ACCSC &#8226; Financial Aid and Military Benefits available to those who qualify.
+			</center>	
+		</p>
+
+		<p>
+				*Laptop brand and software dependent on program. For more information on our programs and their outcomes, go to lafilm.edu/disclosures. Accredited College, ACCSC. VA-Approved by CSAAVE. Member of the Servicemembers Opportunity College Consortium. &#169; 2014 The Los Angeles Film School. All rights reserved. The term "The Los Angeles Film School" and The Los Angeles Film School logo are either service marks or registered service marks of The Los Angeles Film School. View our Privacy Policy.
+		</p>
+
+
+	</footer>
+	</section>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+   
+  </body>
+
+</html>

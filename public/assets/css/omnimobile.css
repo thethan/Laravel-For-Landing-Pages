@@ -1,0 +1,314 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+		margin:0px 0 0 0;
+	}
+.row {
+		margin:0;
+	}
+ header {
+	 	background: #000;
+		color:#fff;
+	    font-family:'Sabon LT W01 Roman';
+		margin-top:0px;
+	 }
+header h2 {
+	 	text-align:center;
+		font-weight:300;
+		margin:.3em 0;
+		text-transform:uppercase;
+		font-family:'Sabon LT W01 Roman';
+		font-size:30px;
+	 }
+header h2 span {
+		font-family:'Sabon LT W01 Roman';
+		font-weight:700;
+	}
+header h2 span.reg {
+		font-weight:normal;
+		vertical-align:super;
+		font-size:12px;
+	}
+header h3 {
+		font-family:'Sabon LT W01 Italic';
+		font-weight: normal;
+		text-align:center;
+		
+	}
+header .icon img {
+		margin:0 6px 0 0;
+	}
+
+h1 {
+		font-family:'UniversLTW01-39ThinUltr';
+		text-transform:uppercase;
+		font-size:95px;
+		margin:0 0 15px;
+		padding-left:4em;
+		color:#e3d583;
+	}
+.description {
+		background:#fff;
+		color:#000;
+		padding: .2em ;
+	}
+	
+.phone {
+		color: #fff;
+		background:#000;
+		font-family:'Univers LT W01 65 Bold';
+	}	
+.phone a {
+		color: #fff;
+		font-family:'Univers LT W01 65 Bold';
+		height:45px;
+	}
+.panel-body h2 {
+	  font-family:'UniversLTW01-39ThinUltr';
+	}
+a:hover
+{
+  text-decoration:none;
+}
+ .panel 
+{
+background: rgb(235,235,235);
+
+background: -moz-linear-gradient(top,  rgba(235,235,235,1) 0%, rgba(251,251,251,1) 100%);
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(235,235,235,1)), color-stop(100%,rgba(251,251,251,1)));
+
+background: -webkit-linear-gradient(top,  rgba(235,235,235,1) 0%,rgba(251,251,251,1) 100%);
+
+background: -o-linear-gradient(top,  rgba(235,235,235,1) 0%,rgba(251,251,251,1) 100%);
+
+background: -ms-linear-gradient(top,  rgba(235,235,235,1) 0%,rgba(251,251,251,1) 100%);
+
+background: linear-gradient(to bottom,  rgba(235,235,235,1) 0%,rgba(251,251,251,1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#fbfbfb',GradientType=0 );
+
+
+}
+
+.panel .open 
+{
+background: rgb(223,210,129);
+
+background: -moz-linear-gradient(top,  rgba(223,210,129,1) 0%, rgba(208,196,121,1) 100%);
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(223,210,129,1)), color-stop(100%,rgba(208,196,121,1)));
+
+background: -webkit-linear-gradient(top,  rgba(223,210,129,1) 0%,rgba(208,196,121,1) 100%);
+
+background: -o-linear-gradient(top,  rgba(223,210,129,1) 0%,rgba(208,196,121,1) 100%);
+
+background: -ms-linear-gradient(top,  rgba(223,210,129,1) 0%,rgba(208,196,121,1) 100%);
+
+background: linear-gradient(to bottom,  rgba(223,210,129,1) 0%,rgba(208,196,121,1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfd281', endColorstr='#d0c479',GradientType=0 );
+}
+
+.panel-group .panel+.panel {
+		margin:0;
+	}
+.panel-heading, .panel-group .panel {
+		border-radius:0px;
+	}
+h3
+{
+	font-size:24px;
+	font-family:"UniversLTW01-47LightCn";
+	font-weight:400;
+	padding-left:1.5em;
+	padding-right:1.5em;
+}
+
+h4
+{
+	
+	margin:5px 0;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	font-family:"UniversLTW01-53";
+	background-repeat: no-repeat;
+	background-size: 26px;
+}
+#callus a
+{
+	background:#000;
+	font-family:'Univers LT W01 65 Bold';
+	line-height:40px;
+	color:#e3d583;
+	text-indent:32px;
+}
+
+#callus h4 a{
+	font-family:'Univers LT W01 65 Bold';
+
+	line-height:40px;
+}
+	
+.panel-heading h4 {
+		text-indent: 35px;
+		font-family:'UniversLTW01-53Extended';
+		background-position:left center;
+		text-transform:uppercase;
+		font-size:16px;
+		font-weight:100;
+		line-height:48px;
+	}
+h4.rfi {
+	background-image:url('../img/icons/omni/requestfreeinformation.png');
+	}
+h4.film {
+	background-image:url("../img/icons/omni/film.png");
+	}
+h4.recording-arts {
+	background-image:url("../img/icons/omni/audio.png");
+	}
+h4.computer-animation {
+	background-image: url("../img/icons/omni/animation.png");
+}
+h4.game-production {
+	background-image: url("../img/icons/omni/gameproduction.png");
+	}
+h4.mp {
+	background-image: url("../img/icons/omni/mp.png");
+	}
+h4.business {
+	background-image: url('../img/icons/omni/business.png');
+	}
+
+#callus a
+{
+	background-image: url('../img/icons/omni/arrow.png'),
+	url('../img/icons/omni/phone.png');
+	background-position: 1% center, 95% center;
+	background-size: 25px 25px, 11px 21px;
+	background-repeat:no-repeat;
+}
+#grad
+{
+	background:#f2f2f2;
+}
+
+#film {
+    background-color: #f6f6f6;
+    width: 900px;
+    height: 50px;
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+#recordingarts {
+    background-color: #f6f6f6;
+    width: 900px;
+    height: 50px;
+}
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration:none;
+}
+
+#animation {
+    background-color: #f6f6f6;
+    width: 900px;
+    height: 50px;
+}
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+#gameproduction {
+    background-color: #f6f6f6;
+    width: 900px;
+    height: 50px;
+}
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+#mp {
+    background-color: #f6f6f6;
+    width: 900px;
+    height: 50px;
+}
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+#mp {
+    background-color: #f6f6f6;
+    width: 900px;
+    height: 50px;
+}
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+.panel-group .panel-heading+.panel-collapse .panel-body
+{
+	border-top:0px;
+}
+
+.panel-body
+{
+	background-color:#000000;
+	color:#FFF;
+}
+.panel
+{
+border:none;
+}
+
+h5
+{
+font-size:72px;
+font-family:"UniversLTW01-39ThinUltr";
+color:#e3d583;
+}
+
+h6
+{
+	font-size:24px;
+	font-family:"UniversLTW01-47LightCn";
+}
+
+
+footer
+{
+color:#F6F6F6;
+background-color:#000000;
+font-family:"UniversLTW01-47LightCn";
+}
+
+/* OMNI */ 
+#mobile-omni .icon 
+{
+	background: url('../img/icons/film.png');
+}
+
+#mobile-omni  .panel .open 
+{
+
+}

@@ -65,7 +65,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => 'sxMO8nvf25AS7RoMoXYtmNsvle4PsfWH',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -106,6 +106,10 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+		'Zizaco\Entrust\EntrustServiceProvider',
+		'Zizaco\Confide\ConfideServiceProvider',
+		'Robbo\Presenter\PresenterServiceProvider',
+		'Jenssegers\Agent\AgentServiceProvider',
 
 	),
 
@@ -172,7 +176,11 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+		
+		 'Entrust'    => 'Zizaco\Entrust\EntrustFacade',
+		 'Confide'    => 'Zizaco\Confide\ConfideFacade',
 
+		'Agent'            => 'Jenssegers\Agent\Facades\Agent',
 	),
 
 );

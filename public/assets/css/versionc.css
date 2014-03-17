@@ -1,0 +1,592 @@
+
+/* Fonts */
+@font-face{
+  font-family: Sabon;
+  src: url(fonts/Sabon/Sabon.woff);
+}
+
+@font-face{
+  font-family: SabonItalic;
+  src: url(fonts/Sabon/Sabon-Italic.woff);
+}
+
+/* Colors */
+body 
+{
+  background: url("../img/bkgd-landing.jpg") no-repeat 50% 0;
+  background-size:100%; 
+  background-attachment:fixed;
+  font-family: "UniversLTW01-47LightCn";
+}
+
+section.container
+{
+  background: #ffffff;
+}
+ header 
+{
+  background: #000;
+  color:#fff;
+  padding: .5em;
+ }
+ header h1, header h2, header h3
+ {
+  margin:10px 0;
+  color: #ffffff;
+ }
+ header #icon 
+ {
+	margin:10px 0 0;
+	 background-repeat:no-repeat;
+ 		height:28px;
+		width:28px;
+		background-size:cover;
+ }
+ 
+ footer #AD
+{
+	height:25px;
+	widgth:25px;
+}
+
+ header h2 
+    {
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Sabon LT W01 Roman'
+    }
+	header h2 span {
+			margin:15px 0 0 ;
+		}
+  .iosSlider img
+  {
+    width: 100%;
+    height:100%;
+  }
+ 
+ aside {
+  position: relative;
+  margin-top: -4em;
+  margin-right: 1em;
+  z-index: 2;
+ }
+
+#careerbox
+{
+  background-color:#F7F7F7;;
+  color: #2ba4ff;
+  border:25px solid #f7f7f7;
+  border-radius:25px;
+  font-family:12px"Univers";
+}
+
+careerbox #h3
+{
+	font-size:32px;
+	font-style:none;
+	color:#000;
+	font-family:"UniversLTW01-39ThinUltr";
+}
+
+
+h1
+{
+  font-size:98px;
+  font-family: 'UniversLTW01-39ThinUltr';
+  text-transform: uppercase;
+}
+
+.line-height {
+  line-height: 2em;
+  margin-bottom: 36px;
+}
+
+h2
+{
+  font-size:15px;
+  font-weight:bold;
+  text-transform:uppercase;
+  margin:10px 0 0; 
+  color:#3fadff;  
+  font-family:'UniversLTW01-67BoldCn';
+}
+
+header h3, header a
+{
+  font-style: normal;
+}
+
+h3
+{
+  font-size:13px;
+  padding: .5em 0;
+  color:#000000;
+  font-family: 'UniversLTW01-47LightCn';
+  margin:1px 0;
+
+}
+
+h3 span
+{
+	text-transform:none;
+
+}
+
+h4
+{
+  font-size:32px;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  padding: 0px 5px 0px 5px;
+  text-align:left;
+  font-family:'UniversLTW01-39ThinUltr';
+}
+
+h5
+{
+  font-size:15px;
+  font-family: "UniversLTW01-67BoldCn";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h6
+{
+  text-align: center;
+  font-size: 12px;
+  font-family:"UniversLTW01-47LightCn";
+}
+
+#launchbox
+{
+  border-radius: 7px;
+  -webkit-borderr-radius:7px;
+  -moz-border-radius:7px;
+  margin-top: 1em;
+  background: #5fb9fd;
+}
+
+
+#launchbox #comp 
+{
+  max-height:none;
+  margin: -3em 0 0 4em;
+  position: relative; 
+  z-index: 2;
+}
+
+#launchbox #comp
+{
+	align-content:center;
+}
+
+#careerbox ul
+{
+  margin-left:-20px;
+  color:#000;
+}
+
+ul li
+{
+    padding:5px 0;
+}
+
+ul li p
+{
+  color:#000000;
+  font:12px;
+  text-transform:uppercase;
+  letter-spacing:1;
+  padding:0px;
+  margin:0px;
+  font-family: "UniversLTW01-53Extended";
+}
+
+p
+{
+  font:16px;
+  font-family: "UniversLTW01-47LightCn";
+  
+}
+
+
+ header h2 #college 
+    {
+    text-transform:none;
+    font-size:17px; 
+    font-family:'Sabon LT W01 Italic';
+	line-height:27px;     
+    }
+
+
+header h3, header a, header a:visited, header a:hover 
+{
+    text-decoration: none;
+    text-transform:none;
+    color: #FFF;
+    font-size: 15px;
+    font-family:'Univers LT W01 75 Black';
+	padding:10px;
+} 
+
+
+form
+{
+  background: #000;
+}
+
+ footer 
+{
+  background: #000;
+  color:#fff;
+  padding:.5em;
+  position:center;
+  text-align:center;
+  font-size:10px;
+  margin-top:30px;
+
+ }
+ 
+#formbox
+{
+  background: #000;
+  width: 100%;
+  margin-bottom: 3em;
+  text-transform:uppercase;
+  border-radius:10px;
+}
+
+#formbox h3 {
+	color:#FFF;
+	font-family:"UniversLTW01-39ThinUltr";
+	text-align:center;
+	margin:.3em 0;
+	font-size:32px;
+  	padding: .5em 0;
+  	margin:1px 0;	text-transform:none;
+}
+
+#formbox h3 span 
+{
+	
+	font-family:'Univers LT W01 75 Black';
+	color:#3fadff;
+}
+ #film h1
+{
+	color:#3fadff;
+}
+
+#film header h2
+	{
+		color:#ffffff;
+	}
+#film h2
+	{
+		color:#3fadff;
+	}
+	
+#film #careerbox
+	{
+ 		 color: #3fadff;
+	}
+	
+#film #careerbox h3
+		{
+		letter-spacing:-1px;
+		font-size:20px;
+		color:#3fadff;
+	}
+		
+#film #launchbox
+	{
+		color:3fadff;
+	}
+#film #icon
+	{
+		background-image:url(../img/icons/FilmReel.png);
+		background-size: contain;
+	}
+#film #comp
+	
+	{
+		background:url(../img/Ad.png)
+		
+	}	
+	
+#film header h3 span, #film #formSubmission
+	{
+		color:#3fadff;
+	}
+	
+#animation h1
+	{
+		color:#f4b517;
+	}
+
+#animation header h2
+	{
+		color:#ffffff;
+	}
+
+#animation h2
+	{
+		color:#f4b517;
+	}
+	
+#animation #careerbox
+	{
+		 color:#f4b517;
+	}
+	
+#animation #careerbox h3
+	{
+		letter-spacing:-1px;
+		font-size:20px;
+		color:#fcbb18;
+	}
+	
+#animation h3 span, #animation #formSubmission
+	{
+		color:#f4b517;
+	}
+
+#animation #formbox h3 span, #animation #formSubmission
+	{
+		color:#f4b517;
+	}
+	
+#animation #launchbox
+	{
+		background-color:#f4b517;
+	}
+#animation #icon
+	{
+		background-image:url(../img/icons/Animation.png);
+		background-size: contain;
+	}
+#animation #comp
+	
+	{
+		background:url(../img/Ad.png)
+		
+	}
+
+#recording-arts h1
+	{
+		color:#ed1c24;
+	}
+
+#recording-arts header h2
+	{
+		color:#ffffff;
+	}
+
+#recording-arts h2
+	{
+		color:#ed1c24;
+	}
+	
+#recording-arts #careerbox
+	{
+
+		font-size:12px;
+ 		 color:#ed1c24;
+	}
+	
+#recording-arts h3 span, #recording-arts #formSubmission
+	{
+	
+		color:#ed1c24;
+	}
+
+#recording-arts formbox h3 span
+	{
+		color:#ed1c24;
+	}
+	
+#recording-arts #careerbox h3
+	{
+		letter-spacing:-1px;
+		font-size:20px;
+		color:#ed1c24;
+	}
+	
+#recording-arts #launchbox
+	{
+		background-color:#ed1c24;
+	}
+#recording-arts #icon
+	{
+		background-image:url(../img/icons/RecordingArts.png);
+		background-size: contain;
+	}
+#recording-arts #comp
+	
+	{
+		background:url(../img/Ad.png)
+		
+	}
+
+#entertainment-business h1
+	{
+		color:#b691f9;
+	}
+
+#entertainment-business header h2
+	{
+		color:#ffffff;
+	}
+
+#entertainment-business h2
+	{
+		color:#b691f9;
+	}
+	
+#entertainment-business #careerbox h3
+	{
+		font-size:32px;
+ 		 color:#b691f9;
+	}
+	
+#entertainment-business h3 span
+	{
+		color:#b691f9;
+	}
+
+#entertainment-business #formbox h3 span, #entertainment-business #formSubmission
+	{
+		color:#b691f9;
+	}
+	
+#entertainment-business #careerbox h3
+	{
+		letter-spacing:-1px;
+		font-size:20px;
+		color:#b691f9;
+	}
+	
+#entertainment-business #launchbox
+	{
+		background-color:#b691f9;
+	}
+#entertainment-business #icon
+	{
+		background-image:url(../img/icons/Business.png);
+		background-size: contain;
+	}
+#entertainment-business #comp
+	
+	{
+		background:url(../img/Ad.png)
+		
+	}
+	
+#game-production h1
+	{
+		color:#25b622;
+	}
+
+#game-production header h2
+	{
+		color:#ffffff;
+	}
+
+#game-production h2
+	{
+		color:#25b622;
+	}
+	
+#game-production #careerbox
+	{
+		
+ 		 color:#25b622;
+	}
+	
+#game-production h3 span
+	{
+		color:#25b622;
+	}
+
+#game-production #formbox h3 span, #game-production #formSubmission
+	{
+		color:#25b622;
+	}
+	
+#game-production #careerbox h3
+	{
+		letter-spacing:-1px;
+		font-size:20px;
+		color:#25b522;
+	}
+
+	
+#game-production #launchbox
+	{
+		background-color:#25b622;
+	}
+#game-production #icon
+	{
+		background-image:url(../img/icons/GameProduction.png);
+		background-size: contain;
+	}
+#game-production #comp
+	
+	{
+		background:url(../img/Ad.png)
+		
+	}
+
+#mp h1
+	{
+		color:#fd267f;
+	}
+
+#mp header h2
+	{
+		color:#ffffff;
+	}
+
+#mp h2
+	{
+		color:#fd267f;
+	}
+	
+#mp #careerbox
+	{
+ 		 color:#fd267f;
+	}
+	
+#mp h3 span
+	{
+		color:#fd267f;
+	}
+
+#mp #formbox h3 span, #mp #formSubmission
+	{
+		color:#fd267f;
+	}
+	
+#mp #careerbox h3
+	{
+		letter-spacing:-1px;
+		font-size:20px;
+		color:#fd267f;
+	}
+
+#mp #launchbox
+	{
+		background-color:#fd267f;
+	}
+#mp #icon
+	{
+		background-image:url(../img/icons/MusicProduction.png);
+		background-size: contain;
+	}
+#mp #comp
+	
+	{
+		background:url(../img/Ad.png)
+		
+	}
