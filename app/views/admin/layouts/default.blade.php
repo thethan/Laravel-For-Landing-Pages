@@ -98,10 +98,10 @@
     				<ul class="nav navbar-nav">
     					<li{{ (Request::is('admin') ? ' class="active"' : '') }}><a href="{{{ URL::to('admin') }}}"><span class="glyphicon glyphicon-home"></span> Home</a></li>
     					<li{{ (Request::is('lafilm/template*') ? ' class="active"' : '') }}><a href="{{{ URL::to('lafilm/template') }}}"><span class="glyphicon glyphicon-list-alt"></span> Templates</a></li>
-    					<li{{ (Request::is('lafilm/landingpages*') ? ' class="active"' : '') }}><a href="{{{ URL::to('lafilm/landingpages') }}}"><span class="glyphicon glyphicon-bullhorn"></span> Landing aPages</a></li>
+    					<li{{ (Request::is('lafilm/landingpages*') ? ' class="active"' : '') }}><a href="{{{ URL::to('lafilm/landingpages') }}}"><span class="glyphicon glyphicon-bullhorn"></span> Landing Pages</a></li>
     					<li class="dropdown{{ (Request::is('admin/users*|admin/roles*') ? ' active' : '') }}">
     						<a class="dropdown-toggle" data-toggle="dropdown" href="{{{ URL::to('admin/users') }}}">
-    							<span class="glyphicon glyphicon-user"></span> Users <span class="caret"></span>
+    							<span class="glyphicon glyphicon-user"></span> Stats <span class="caret"></span>
     						</a>
     						<ul class="dropdown-menu">
     							<li{{ (Request::is('admin/users*') ? ' class="active"' : '') }}><a href="{{{ URL::to('admin/users') }}}"><span class="glyphicon glyphicon-user"></span> Stats</a></li>
