@@ -74,7 +74,8 @@ jQuery(document).ready(function(){
 	// pivot options
 	{
 		xDimension : [
-                   {dataName: 'VarTitle', label : 'Title', width: 90}, 
+                   {dataName: 'VarTitle', label : 'Title', width: 90},
+				   	 {dataname: 'Percent', label : 'Percent', width: 90} 
                    
                 ],
 		yDimension : [
