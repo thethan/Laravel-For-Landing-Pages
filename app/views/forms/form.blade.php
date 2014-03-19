@@ -55,7 +55,7 @@
 			}
 			?>
 <form id="rfiform" method="post" name="info">
-			<h3>Request <span>{{ $bsgpd }}</span> Information</h3>
+			<h3>Request <span>Free</span> Information</h3>
                <div class="col-md-12">
                  <div class="styled-select selectDiv">	
                     <span class="selectDefault selectProgram">Program of Interest <span class="caret pull-right"></span></span>
