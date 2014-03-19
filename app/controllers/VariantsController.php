@@ -118,10 +118,11 @@ class VariantsController extends BaseController {
 								</div>";
 								$i++;
 				}
+		$data = array('id'=>$variant->id, 'lp_id'=>$variant->lp_id, 'slug'=>$slug);
 		
 		// return View::make($view)->with('variables', $variab);
 		return View::make($view)->with('variables', $variab)->with('sliderimages', $sliderimages)->with('slideritems', $slideritems)
-									->with('sliderbuttons', $sliderbuttons)->with('slug', $lppage->slug)->nest('form', 'forms.form');
+									->with('sliderbuttons', $sliderbuttons)->with('slug', $lppage->slug)->nest('form', 'forms.form', $data );
 	}
 	 
 
