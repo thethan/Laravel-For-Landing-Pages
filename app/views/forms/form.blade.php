@@ -23,36 +23,35 @@
 			$bsgpd = '';
 			
 			
-			if($slug){
-				switch ($slug)
-				{
-					case 'mp':
-					case 'mp-mobile':
-						$asmp = 'selected';
-					break;
-					case 'film':
-					case 'film-mobile':
-						$asf = 'selected';
-					break;
-					case 'animation':
-					case 'animation-mobile':
-						$bsave = 'selected';
-					break;
-					case 'game-production':
-					case 'game-mobile':
-						$bsgpd = 'selected';
-					break;
-					case 'entertainment-business':
-					case 'business-mobile':
-						$bseb = 'selected';
-					break;
-					case 'recording-arts':
-					case 'recording-arts-mobile':
-						$asra = 'selected';
-					break;
-					default:
-					break;
-				}
+			if(!$slug){$slug == '';}
+			switch ($slug)
+			{
+				case 'mp':
+				case 'mp-mobile':
+					$asmp = 'selected';
+				break;
+				case 'film':
+				case 'film-mobile':
+					$asf = 'selected';
+				break;
+				case 'animation':
+				case 'animation-mobile':
+					$bsave = 'selected';
+				break;
+				case 'game-production':
+				case 'game-mobile':
+					$bsgpd = 'selected';
+				break;
+				case 'entertainment-business':
+				case 'business-mobile':
+					$bseb = 'selected';
+				break;
+				case 'recording-arts':
+				case 'recording-arts-mobile':
+					$asra = 'selected';
+				break;
+				default:
+				break;
 			}
 			?>
 <form id="rfiform" method="post" name="info">
