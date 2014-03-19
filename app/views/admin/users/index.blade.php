@@ -46,7 +46,7 @@ jQuery(document).ready(function(){
  
 	jQuery("#grid").jqGrid(
 	{
-		url : "http://landingv1.local/admin/users/data",
+		url : "http://go.lafilm.edu/admin/users/data",
 		loadonce: true,
 		colModel : [
 			{ name: "LandingPages"},
@@ -70,7 +70,7 @@ jQuery(document).ready(function(){
 	
 	function creategrid(id, LP){
 		jQuery("#pivotgrid").jqGrid('jqPivot', 
-	'http://landingv1.local/admin/users/data/'+id,
+	'http://go.lafilm.edu/admin/users/data/'+id,
 	// pivot options
 	{
 		xDimension : [
