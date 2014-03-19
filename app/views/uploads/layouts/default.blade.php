@@ -48,7 +48,6 @@
 	<link rel="stylesheet" src="{{{ asset('assets/css/master.css') }}}" >
     <link rel="stylesheet" src="{{{ asset('assets/css/wysihtml5/prettify.css') }}}" >
     <link rel="stylesheet" src="{{{ asset('assets/css/wysihtml5/bootstrap-wysihtml5.css') }}} " >
-    <link rel="stylesheet" src="{{{ asset('assets/css/datatables-bootstrap.css') }}}">
     <link rel="stylesheet" src="{{{ asset('assets/css/colorbox.css') }}}" >
 	<style>
 	body {
@@ -150,9 +149,7 @@
 	 <script src="{{{ assets('assets/bootstrap/js') }}}"></script>
       <script src="{{{ assets('assets/js/wysihtml5/wysihtml5-0.3.0.js')}}}"></script>
      <script src="{{{ assets('assets/js/wysihtml5/bootstrap-wysihtml5.js') }}}"></script>
-    <script src='http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js'></script>
-    <script src="{{{ assets('assets/js/datatables-bootstrap.js') }}}"></script>
-    <script src="{{{ assets('assets/js/datatables.fnReloadAjax.js')}}}"></script>
+
      <script src="{{{ assets('assets/js/jquery.colorbox.js') }}}"></script>
      <script src="{{{ assets('assets/js/prettify.js') }}}"></script>
 	

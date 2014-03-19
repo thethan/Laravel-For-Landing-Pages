@@ -68,9 +68,11 @@ $(document).ready(function(){
 					);
 
        	var defaultpro = 'Program of Interest';
-
-				$('.selectProgram').text(defaultpro);
-				
+				var selected = $('.selectProgramBox').find(":selected").text();
+				if(selected)
+				{
+					$('.selectProgram').text(selected);
+				}
 				$('.selectProgramBox').on('change',function(){
 				   var defaultpro2 = $('.selectProgramBox').find(":selected").text(); 
 					$('.selectProgram').text(defaultpro2);

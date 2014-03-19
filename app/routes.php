@@ -53,6 +53,7 @@ Route::group(array('prefix' => 'admin', 'before' => 'auth'), function()
         ->where('user', '[0-9]+');
     Route::post('users/{user}/delete', 'AdminUsersController@postDelete')
         ->where('user', '[0-9]+');
+	Route::get('users/data/{id}', 'AdminUsersController@pivottable');
     Route::controller('users', 'AdminUsersController');
 
     # User Role Management

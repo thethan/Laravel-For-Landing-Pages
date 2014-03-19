@@ -17,20 +17,12 @@
 		</h3>
 	</div>
 
-	<table id="users" class="table table-striped table-hover">
-		<thead>
-			<tr>
-				<th class="col-md-2">{{{ Lang::get('admin/users/table.username') }}}</th>
-				<th class="col-md-2">{{{ Lang::get('admin/users/table.email') }}}</th>
-				<th class="col-md-2">{{{ Lang::get('admin/users/table.roles') }}}</th>
-				<th class="col-md-2">{{{ Lang::get('admin/users/table.activated') }}}</th>
-				<th class="col-md-2">{{{ Lang::get('admin/users/table.created_at') }}}</th>
-				<th class="col-md-2">{{{ Lang::get('table.actions') }}}</th>
-			</tr>
-		</thead>
-		<tbody>
-		</tbody>
-	</table>
+<div>
+  <table id='grid'></table>
+  <div id='pager'></div>
+  <table id='pivotgrid'></table>
+  <div id='pivotpager'></div>
+</div>	
 @stop
 
 @section('styles')
@@ -44,46 +36,129 @@
 
 {{-- Scripts --}}
 @section('scripts')
-  <script src="{{{ asset('assets/js/jquery.min.js') }}}" type="text/javascript"></script> 
-    <script src="{{{ asset('assets/js/jquery.jqGrid.min.js') }}}" type="text/javascript"></script> 
+  <script src="{{{ asset('assets/js/jquery-1.11.0.min.js') }}}" type="text/javascript"></script> 
+    <script src="{{{ asset('assets/js/jquery.jqGrid.src.js') }}}" type="text/javascript"></script> 
+    <script src="{{{ asset('assets/js/grid.locale-en.js') }}}"></script>
     <script src=" {{{ asset('assets/js/jquery-ui-custom.min.js') }}}" type="text/javascript"></script> 
 	<script type="text/javascript">
-		$(document).ready(function() {
-            $('#users').jqGrid({
-				//url: "{{ URL::to('admin/users/data') }}",
-				data: '[{"id":"1","username":"ethan","email":"etotten@lafilm.edu","rolename":"admin","confirmed":"1","created":"2014-01-23 01:47:07"},{"id":"2","username":"lafs","email":"etotten@lafilm.edu","rolename":"admin","confirmed":"1","created":"2014-01-23 01:47:07"},{"id":"3","username":"cloebs","email":"cloebs@lafilm.edu","rolename":"admin","confirmed":"1","created":"2014-02-26 06:55:45"}]',
-				datatype: "json",
-				colNames:['id','created', 'username', 'rolename','email'],
-				colModel:[
-					{name:'id',index:'id', width:55, editable:true, sorttype:'int',summaryType:'count', summaryTpl : '({0}) total'},
-					{name:'created',index:'created', width:90, sorttype:'date', formatter:'date', datefmt:'d/m/Y'},
-					{name:'username',index:'username', sorttype:'string', width:100},
-					{name:'rolename',index:'rolename', sorttype:'string', width:70},
-					{name:'email',index:'email', sorttype:'string', width:100},
+jQuery(document).ready(function(){	
+ 
+ 
+	jQuery("#grid").jqGrid(
+	{
+		url : "http://landingv1.local/admin/users/data",
+		loadonce: true,
+		colModel : [
+			{ name: "LandingPages"},
+			{ name: "LpID" },
+			{ name: "Slug"},
+
+		],
+		onSelectRow: function (id) {
+    	// get data from the column 'userCode'
+    	var id = $(this).jqGrid('getCell', id,  'LpID');
+		var LP = $(this).jqGrid('getCell', id,  'LandingPages');
+		clearGrid('pivotgrid');
+    	creategrid(id, LP);
+		},
+		datatype:"json",
+		width: 700,
+		rowNum : 100,
+		pager: "#pager",
+		caption: "Grid"
+	});
+	
+	function creategrid(id, LP){
+		jQuery("#pivotgrid").jqGrid('jqPivot', 
+	'http://landingv1.local/admin/users/data/'+id,
+	// pivot options
+	{
+		xDimension : [
+                   {dataName: 'VarTitle', label : 'Title', width: 90}, 
+                   
+                ],
+		yDimension : [
+                   {dataName: 'Percent'},
+				   	
+                ],
+		aggregates : [
+			{member : 'Hit', aggregator : 'sum', width:50, label:'Hit'},
+			{member : 'Convert', aggregator : 'sum', width:50, label:'Convert'},
 			
+		],
+		rowTotals: true,
+		colTotals : true
+ 
+	}, 
+	// grid options
+	{
+		width: 900, 
+		rowNum : 100,
+		pager: "#pivotpager",
+		caption: LP
+	}); /*
+		jQuery("#grid").jqGrid('jqPivot', 
+	'http://landingv1.local/admin/users/data',
+	// pivot options
+	{
+		xDimension : [
+                   {dataName: 'CategoryName', label : 'Category', width: 90}, 
+                   {dataName: 'ProductName', label : 'Product', width:90}
+                ],
+		yDimension : [
+                   {dataName: 'Country'}
+                ],
+		aggregates : [
+			{member : 'Price', aggregator : 'sum', width:50, label:'Sum'},
+			{member : 'Quantity', aggregator : 'sum', width:50, label:'Qty'}
+		],
+		rowTotals: true,
+		colTotals : true
+ 
+	}, 
+	// grid options
+	{
+		width: 700,
+		rowNum : 10,
+		pager: "#pager",
+		caption: "Amounts and quantity by category and product"
+	});
+	*/
 		
-					
-				],
-				rowNum:10,
-				rowList:[10,20,30],
-				height: 'auto',
-				pager: '#p48remote',
-				viewrecords: true,
-				sortorder: "desc",
-				caption:"Grouping with remote data",
-				grouping: true,
-				groupingView : {
-					groupField : ['name'],
-					groupColumnShow : [true],
-					groupText : ['<b>{0}</b>'],
-					groupCollapse : false,
-					groupOrder: ['asc'],
-					groupSummary : [true],
-					groupDataSorted : true
-				}
-				
-			});
-			jQuery("#48remote").jqGrid('navGrid','#p48remote',{add:false,edit:false,del:false});
-        });
-	</script>
+		};
+		
+	function clearGrid(id)
+	{
+		$('#'+id).GridUnload();
+	}
+	/*
+	jQuery("#grid").jqGrid('jqPivot', 
+	'http://landingv1.local/admin/users/data',
+	// pivot options
+	{
+		xDimension : [
+                   {dataName: 'CategoryName', label : 'Category', width: 90}, 
+                   {dataName: 'ProductName', label : 'Product', width:90}
+                ],
+		yDimension : [
+                   {dataName: 'Country'}
+                ],
+		aggregates : [
+			{member : 'Price', aggregator : 'sum', width:50, label:'Sum'},
+			{member : 'Quantity', aggregator : 'sum', width:50, label:'Qty'}
+		],
+		rowTotals: true,
+		colTotals : true
+ 
+	}, 
+	// grid options
+	{
+		width: 700,
+		rowNum : 10,
+		pager: "#pager",
+		caption: "Amounts and quantity by category and product"
+	});
+	*/
+});
+</script>
 @stop

@@ -286,7 +286,62 @@ class AdminUsersController extends AdminController {
 			->join('roles', 'roles.id', '=', 'assigned_roles.role_id')
 			->select('users.id as id', 'users.username as username','users.email as email', 'roles.name as rolename', 'users.confirmed as confirmed', 'users.created_at as created')
 			->get();
-
-      return $users;
+		
+		/*return '{"rows":[
+			{"LandingPages":"Beverages","VariantName":"Steeleye Stout","Country":"UK","Price":"1008.0000","Quantity":"65"},
+			{"LandingPages":"Beverages","VariantName":"Laughing Lumberjack Lager","Country":"USA","Price":"140.0000","Quantity":"10"},
+			{"LandingPages":"Beverages","VariantName":"Lakkalik","Country":"USA","Price":"2160.0000","Quantity":"120"}
+			]}';
+		*/	
+			$landing = DB::table('landing_pages')->get();
+			
+			$rows = array();
+			
+			foreach($landing as $lp)
+				{
+					
+					$rows[] = array('LandingPages' => $lp->title, 'Slug' => $lp->slug, 'LpID' => $lp->id );
+					
+				};
+			$jsondata =	array(
+					'rows' => $rows
+				);
+		
+			return json_encode($jsondata);
+		
+ //     return $users;
     }
+	
+	public function pivottable($lp)
+	{
+		
+		$variants = DB::table('stats')
+					->join('variants', 'stats.vid', '=', 'variants.id')
+					
+					
+					->where('variants.lp_id', '=', $lp)
+					->get();
+			
+			$rows = array();
+			
+			//print_r($variants);
+			
+			foreach($variants as $var)
+				{
+					
+					$rows[] = array('Percent' => $var->percent, 'VarTitle' => $var->title, 'Convertat' => $var->created_at, 'Hit'=> $var->hit, 'Convert' => $var->convert );
+					
+				};
+			$jsondata =	array(
+					'rows' => $rows
+				);
+	/*
+		return '{"rows":[
+			{"LandingPages":"Beverages","VariantName":"Steeleye Stout","Country":"UK","Price":"1008.0000","Quantity":"65"},
+			{"LandingPages":"Beverages","VariantName":"Laughing Lumberjack Lager","Country":"USA","Price":"140.0000","Quantity":"10"},
+			{"LandingPages":"Beverages","VariantName":"Lakkalik","Country":"USA","Price":"2160.0000","Quantity":"120"}
+			]}';
+		*/
+		return json_encode($jsondata);
+	}
 }

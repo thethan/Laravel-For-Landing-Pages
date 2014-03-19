@@ -149,7 +149,65 @@ class LandingPagesController extends BaseController {
 	
 	public function getView($slug)
 	{
+		if(Agent::isMobile() || Agent::isTablet())
+			{
+				switch ($slug)
+				{
+					case "film":
+						return Redirect::to('film-mobile');
+					break;
+					case "animation":
+						return Redirect::to('animation-mobile');
+					break;
+					case "game-production":
+						return Redirect::to('game-mobile');
+					break;
+					case "recording-arts":
+						return Redirect::to('recording-arts-mobile');
+					break;
+					case "mp":
+						return Redirect::to('mp-mobile');
+					break;
+					case "entertainment-business":
+						return Redirect::to('business-mobile');
+					break;
+					case "military":
+						return Redirect::to('omni-mobile');
+					break;
+					case "omni":
+						return Redirect::to('omni-mobile');
+					break;
+				}
+			}
+			elseif(!Agent::isMobile() && !Agent::isTablet())
+			{
+				switch($slug){
+					case "film-mobile":
+						return Redirect::to('film');
+					break;
+					case "animation-mobile":
+						return Redirect::to('animation');
+					break;
+					case "game-mobile":
+						return Redirect::to('game-production');
+					break;
+					case "recording-arts-mobile":
+						return Redirect::to('recording-arts');
+					break;
+					case "mp-mobile":
+						return Redirect::to('mp');
+					break;
+					case "business-mobile":
+						return Redirect::to('entertainment-business');
+					break;
 
+					case "omni-mobile":
+						return Redirect::to('omni');
+					break;
+				}
+			}
+			;
+			
 		$landingpage = $this->landingpage->where('slug', '=', $slug)->first();
 		
 		
@@ -233,7 +291,7 @@ class LandingPagesController extends BaseController {
 								</div>";
 								$i++;
 				}
-			$data = array('id'=>$variant->id, 'lp_id'=>$variant->lp_id);
+			$data = array('id'=>$variant->id, 'lp_id'=>$variant->lp_id, 'slug'=>$slug);
 		
 		// return View::make($view)->with('variables', $variab);
 		return View::make($view)->with('variables', $variab)->with('variant', $variant)->with('sliderimages', $sliderimages)	->with('slideritems', $slideritems)
