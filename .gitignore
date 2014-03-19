@@ -1,4 +1,4 @@
-
+app/config/
 composer.phar
 composer.lock
 .env.local.php

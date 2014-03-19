@@ -1,13 +1,6 @@
        <?php 
 			extract($variables);
-			
-			
-		if(Agent::is('Windows'))  { echo 'Windows';};
-		if(Agent::is('Firefox'))  { echo 'Firefox';};
-		if(Agent::is('iPhone'))  { echo 'iPhone';};
-		if(Agent::is('OS X'))  { echo 'OS X';};
-			Agent::is('OS X');
-					?>
+?>
 <!DOCTYPE html>
 <html>
   <head>

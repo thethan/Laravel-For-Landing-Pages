@@ -15,21 +15,56 @@
 				$hid = $hit->id;
 			}
 			
-				
-?>
+			$asmp ='';
+			$asf = '';
+			$bseb = '';
+			$asra = '';
+			$bsave = '';
+			$bsgpd = '';
+			
+			switch ($slug)
+			{
+				case 'mp':
+				case 'mp-mobile':
+					$asmp = 'selected';
+				break;
+				case 'film':
+				case 'film-mobile':
+					$asf = 'selected';
+				break;
+				case 'animation':
+				case 'animation-mobile':
+					$bsave = 'selected';
+				break;
+				case 'game-production':
+				case 'game-mobile':
+					$bsgpd = 'selected';
+				break;
+				case 'entertainment-business':
+				case 'business-mobile':
+					$bseb = 'selected';
+				break;
+				case 'recording-arts':
+				case 'recording-arts-mobile':
+					$asra = 'selected';
+				break;
+				default:
+				break;
+			}
+			?>
 <form id="rfiform" method="post" name="info">
-			<h3>Request <span>Free</span> Information</h3>
+			<h3>Request <span>{{ $bsgpd }}</span> Information</h3>
                <div class="col-md-12">
                  <div class="styled-select selectDiv">	
                     <span class="selectDefault selectProgram">Program of Interest <span class="caret pull-right"></span></span>
                         <select name="program" id="AdProgramID" class="col-md-12 col-sm-12 selectProgramBox"  required>
                             <option></option>
-                            <option value="ASF">Film</option>
-                            <option value="BSEB">Entertainment Business</option>
-                            <option value="ASRA">Recording Arts</option>
-                            <option value="ASGP">Game Production</option>
-                            <option value="ASCA">Computer Animation</option>
-                            <option value="ASMP">Music Production</option>
+                            <option {{$asf}} value="ASF">Film</option>
+                            <option {{$bseb }} value="BSEB-HOLD">Entertainment Business</option>
+                            <option {{$asra}} value="ASRA">Recording Arts</option>
+                            <option {{$bsgpd}} value="BSGPD-HOLD">Game Production</option>
+                            <option {{$bsave}} value="BSAVE-HOLD">Computer Animation</option>
+                            <option {{$asmp}} value="ASMP">Music Production</option>
                         </select>
                     </div>
                 </div>
