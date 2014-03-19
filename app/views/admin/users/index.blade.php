@@ -97,36 +97,9 @@ jQuery(document).ready(function(){
 		rowNum : 100,
 		pager: "#pivotpager",
 		caption: LP
-	}); /*
-		jQuery("#grid").jqGrid('jqPivot', 
-	'http://landingv1.local/admin/users/data',
-	// pivot options
-	{
-		xDimension : [
-                   {dataName: 'CategoryName', label : 'Category', width: 90}, 
-                   {dataName: 'ProductName', label : 'Product', width:90}
-                ],
-		yDimension : [
-                   {dataName: 'Country'}
-                ],
-		aggregates : [
-			{member : 'Price', aggregator : 'sum', width:50, label:'Sum'},
-			{member : 'Quantity', aggregator : 'sum', width:50, label:'Qty'}
-		],
-		rowTotals: true,
-		colTotals : true
- 
-	}, 
-	// grid options
-	{
-		width: 700,
-		rowNum : 10,
-		pager: "#pager",
-		caption: "Amounts and quantity by category and product"
 	});
-	*/
-		
-		};
+	$('#pivotgrid thead th:lt(2)').remove();	
+	};
 		
 	function clearGrid(id)
 	{
