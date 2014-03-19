@@ -161,7 +161,7 @@ label.error {
 		margin:1em 0;
 	}
 .selectDefault, .selectDiv option {
-	color:#fff;
+	color:#000;
     font-size:16px;
     }
 .valid option, span.valid {
