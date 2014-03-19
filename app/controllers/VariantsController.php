@@ -76,7 +76,10 @@ class VariantsController extends BaseController {
 		//echo $tempid;
 		
 		$lp = $variant->lp_id;
-			$lppage = DB::table('landing_pages')->where('id','=', $lp)->first();
+		
+		$lppage = DB::table('landing_pages')->where('id','=', $lp)->first();
+		
+		$slug = $lppage->slug;
 		
 		$variables = $this->variant->getVariantVariables($id);
 		$key = array();
