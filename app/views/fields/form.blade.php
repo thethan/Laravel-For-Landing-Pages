@@ -1,14 +1,17 @@
 <form name="info">
 			<h3>Request <span>Free</span> Information</h3>
 			<div class="styled-select">
-		
+					<?php 
+						
+					
+					;?>
 					<select name="program" id="AdProgramID" class="chosen-select" data-placeholder="Program of interest">
 						<option value="">Program of Interest <span class="caret"></span></option>
                       <option value="ASF">Film</option>
-						<option value="BSEB">Entertainment Business</option>
+						<option value="BSEB-HOLD">Entertainment Business</option>
 						<option value="ASRA">Recording Arts</option>
-						<option value="ASGP">Game Production</option>
-						<option value="ASCA">Computer Animation</option>
+						<option value="BSGPD-HOLD">Game Production</option>
+						<option value="BSAVE-HOLD">Computer Animation</option>
 						<option value="ASMP">Music Production</option>
 					</select>
 				</div>
