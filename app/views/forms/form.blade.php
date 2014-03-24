@@ -62,9 +62,9 @@
                         <select name="program" id="AdProgramID" class="col-md-12 col-sm-12 selectProgramBox"  required>
                             <option></option>
                             <option {{$asf}} value="ASF">Film</option>
-                            <option {{$bseb }} value="BSEB-HOLD">Entertainment Business</option>
+                            <option {{$bseb }} value="BSEBF-HOLD">Entertainment Business</option>
                             <option {{$asra}} value="ASRA">Recording Arts</option>
-                            <option {{$bsgpd}} value="BSGPD-HOLD">Game Production</option>
+                            <option {{$bsgpd}} value="BGSPD-HOLD">Game Production</option>
                             <option {{$bsave}} value="BSAVE-HOLD">Computer Animation</option>
                             <option {{$asmp}} value="ASMP">Music Production</option>
                         </select>
