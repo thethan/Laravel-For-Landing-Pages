@@ -54,7 +54,7 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => '162.144.94.135',
+			'host'      => 'localhost',
 //			'unix_socket'   => '/Applications/MAMP/tmp/mysql/mysql.sock',
 			'database'  => 'lamedias_landing',
 			'username'  => 'lamedias',
