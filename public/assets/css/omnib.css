@@ -23,23 +23,25 @@ section.container
 {
   background: #ffffff;
 }
- header 
+
+header 
 {
   background: #000;
   color:#fff;
   padding: .5em;
  }
- header h1, header h2, header h3
+
+header h1, header h2, header h3
  {
   margin:10px 0;
   color: #ffffff;
  }
+
  header #icon 
  {
-	 background-repeat:no-repeat;
- 		height:28px;
-		width:28px;
-		background-size:cover;
+	background-repeat:no-repeat;
+	height:26px;
+	width:26px;
  }
  
  footer #AD
@@ -48,12 +50,13 @@ section.container
 	widgth:25px;
 }
 
- header h2 
+.col-md-6 col-lg-7 col-sm-5 h2 
     {
     color: #ffffff;
-    font-size: 16px;
+    font-size: 21.5px;
     text-transform: uppercase;
-    font-family: 'Sabon LT W01 Roman'
+    font-family: 'UniversLTW01-67BoldCn';
+	padding:0px 0px 0px 15px;
     }
 
   .iosSlider img
@@ -85,29 +88,42 @@ h1
   color:#dbc32d;
   font-family: 'UniversLTW01-39ThinUltr';
   text-transform: uppercase;
+  padding:0px 0px 0px 10px;
 }
 
-.line-height {
-  line-height: 2em;
-  margin-bottom: 36px;
+h1 span
+{
+	color:#000000;
 }
+
 
 h2
 {
-  font-size:21px;
-  text-transform:uppercase;
-  margin: 0 0; 
-  color:#000000;  
-  font-family:'UniversLTW01-67BoldCn';
-}
-.program h2 {
-	  font-size:15px;
+  font-size:15px;
   font-weight:bold;
   text-transform:uppercase;
-  margin:10px 0 0; 
-  color:#000000;  
+  margin:0px 0px 0px 15px; 
+  color:#333333;  
   font-family:'UniversLTW01-67BoldCn';
 }
+
+.program h2
+{
+	color:#c7b230;
+}
+                                        
+div.program .col-sm-12:first-child
+{
+	padding: 0px;	
+}
+.line-height
+{
+	font-size:16px;
+	padding-right:15px;
+	line-height:30px;
+	padding:10px 0px 0px 15px;
+}
+
 header h3, header a
 {
   font-style: normal;
@@ -116,9 +132,9 @@ header h3, header a
 h3
 {
   font-size:13px;
+  font-style:italic;
   padding: .5em 0;
   color:#000000;
-  font-style:italic;
   font-family: 'UniversLTW01-47LightCn';
   margin:1px 0;
 
@@ -131,17 +147,15 @@ h3 span
 
 }
 
-
 h4
 {
   font-size:16px;
-  padding: 0px 5px 0px 0px;
-  margin:.7em 0 1em 0;
+  text-transform:uppercase;
+  padding: 10px 0px 0px 15px;
   text-align:left;
   color:#000000;
-  font-family: "UniversLTW01-67BoldCn";
+  font-family:'UniversLTW01-67BoldCn';
 }
-
 
 h5
 {
@@ -237,15 +251,15 @@ form
 
  footer 
 {
-  background: #000;
+  background:#000;
   color:#fff;
-  padding:.5em;
+  padding:2.5em;
   position:center;
   text-align:center;
   font-size:10px;
   margin-top:30px;
-
  }
+ 
  
 #formbox
 {

@@ -192,7 +192,7 @@
   <body id="<?php echo $slug;?>">
   	<section class="container">
   		<header class="row">  			
-  			<div class="col-md-9">
+  			<div class="col-md-8">
   				<div class="col-md-1 col-xs-1" id='icon'></div>
   					<h2 class="col-md-11 col-xs-11">
 					<?php $school = ($slug == 'recording-arts'  || $slug == 'mp') ?  'lars.png' :  'lafilm.png' ; ?> 
@@ -200,7 +200,7 @@
   						<span id="college">{{ $college }}</span>
   					</h2>
   			</div>
-  			<h3 class="col-md-3"><a href="tel:+13174562564"> <span>CALL NOW!</span> 877-9LA-FILM </a> </h3>
+  			<h3 class="col-md-4"><a href="tel:+13174562564"> <span>CALL NOW!</span> 877-9LA-FILM </a> </h3>
   		</header>
 
    <div class = 'iosSlider row'>

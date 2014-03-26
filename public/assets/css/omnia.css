@@ -36,11 +36,9 @@ section.container
  }
  header #icon 
  {
-	 background-repeat:no-repeat;
- 		height:28px;
-		width:28px;
-		background-size:cover;
-		background-image:url('..img/icons/omni.png');
+	background-repeat:no-repeat;
+ 	height:28px;
+	width:28px;
  }
  
  footer #AD
@@ -62,6 +60,11 @@ section.container
     width: 100%;
     height:100%;
   }
+  
+  .iosSliderButtons
+  {
+	color:#dbc32d; 
+  }
  
  aside {
   position: relative;
@@ -76,16 +79,24 @@ section.container
   color: #2ba4ff;
   border:25px solid #f7f7f7;
   border-radius:25px;
-  font-family:12px"Univers";
-  font:32px;
+  font-family:"UniversLTW01-39ThinUltr";
+  font-size:32px;
 }
 
-#careerbox #h3
+#careerbox h3
 {
 	font-size:32px;
-	font-style:none;
 	color:#000;
 	font-family:"UniversLTW01-39ThinUltr";
+	letter-spacing:2px;
+}
+
+#careerbox ul
+{
+  margin-left:-20px;
+  color:#000;
+  font-family:'UniversLTW01-53Extended';
+  font-size:12px
 }
 
 h1
@@ -94,64 +105,52 @@ h1
   font-family: 'UniversLTW01-39ThinUltr';
   text-transform: uppercase;
   color:#dbc32d;
+  text-align:justify;
+  
 }
 
-.line-height {
-  line-height: 2em;
-  margin-bottom: 36px;
+div.program .col-sm-12:first-child
+{
+	padding: 0px;	
 }
 
 h2
 {
-  font-size:21px;
-  text-transform:uppercase;
-  margin: 0 0; 
-  color:#000000;  
-  font-family:'UniversLTW01-67BoldCn';
-}
-.program h2 {
-	  font-size:15px;
+  font-size:18px;
   font-weight:bold;
   text-transform:uppercase;
-  margin:10px 0 0; 
   color:#000000;  
   font-family:'UniversLTW01-67BoldCn';
+  text-align:justify;
 }
+
 header h3, header a
 {
   font-style: normal;
 }
 
 h3
-{
+{ 
   font-size:13px;
-  padding: .5em 0;
   color:#000000;
   font-family: 'UniversLTW01-47LightCn';
   margin:1px 0;
-  font-style:italic;
-
+  text-align:justify;
 }
 
 h3 span
 {
 	text-transform:none;
 	color:#e3d583;
-
 }
-
 
 h4
 {
   font-size:16px;
-  padding: 0px 5px 0px 0px;
-  margin:.7em 0 1em 0;
   text-align:left;
   color:#000000;
-  font-family: "UniversLTW01-67BoldCn";
+  font-family:'UniversLTW01-67BoldCn';
 }
-
-
 
 h5
 {
@@ -189,12 +188,6 @@ h6
 #launchbox #comp
 {
 	align-content:center;
-}
-
-#careerbox ul
-{
-  margin-left:-20px;
-  color:#000;
 }
 
 ul li
@@ -247,14 +240,13 @@ form
 
  footer 
 {
-  background: #000;
+  background:#000;
   color:#fff;
-  padding:.5em;
+  padding:2.5em;
   position:center;
   text-align:center;
   font-size:10px;
   margin-top:30px;
-
  }
  
 #formbox

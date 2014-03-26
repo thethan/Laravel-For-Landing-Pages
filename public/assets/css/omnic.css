@@ -56,7 +56,16 @@ section.container
     font-family: 'Sabon LT W01 Roman';
 	font-weight:bold;
     }
-
+	
+.col-md-6 col-lg-7 col-sm-5 h2 
+    {
+    color: #ffffff;
+    font-size: 21.5px;
+    text-transform: uppercase;
+    font-family: 'UniversLTW01-67BoldCn';
+	padding:0px 0px 0px 15px;
+    }
+	
   .iosSlider img
   {
     width: 100%;
@@ -86,18 +95,18 @@ h1
   font-family: 'UniversLTW01-39ThinUltr';
   text-transform: uppercase;
   color:#dbc32d;
+	padding:0px 0px 0px 10px;
 }
-
-
 
 h2
 {
   font-size:21px;
   text-transform:uppercase;
-  margin: 0 0; 
+  margin: 0px 0px 0px 15px; 
   color:#000000;  
   font-family:'UniversLTW01-67BoldCn';
 }
+
 .program h2 {
 	 font-size:15px;
   font-weight:bold;
@@ -105,7 +114,17 @@ h2
   margin:10px 0 0; 
   /* color:#000000;  */
   font-family:'UniversLTW01-67BoldCn';
+  color:#c7b230;
 }
+
+.line-height
+{
+	font-size:16px;
+	padding-right:15px;
+	line-height:30px;
+	padding:10px 0px 0px 15px;
+}
+
 
 header h3, header a
 {
@@ -133,7 +152,7 @@ h3 span
 h4
 {
   font-size:16px;
-  padding: 0px 5px 0px 0px;
+  padding: 0px 0px 0px 15px;
   margin:.7em 0 1em 0;
   text-align:left;
   color:#000000;
@@ -234,14 +253,13 @@ form
 
  footer 
 {
-  background: #000;
+  background:#000;
   color:#fff;
-  padding:.5em;
+  padding:2.5em;
   position:center;
   text-align:center;
   font-size:10px;
   margin-top:30px;
-
  }
  
 #formbox
