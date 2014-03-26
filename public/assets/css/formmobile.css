@@ -194,6 +194,10 @@ label.error {
 	text-transform:uppercase;
 }
 
+footer a, footer a:hover {
+	color:#FFF;
+}
+
 ::-webkit-input-placeholder { /* WebKit browsers */
     color:    #000;
 }

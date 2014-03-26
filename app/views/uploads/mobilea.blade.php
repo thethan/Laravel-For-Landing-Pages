@@ -318,9 +318,8 @@
 		</p>
 
 		<p class="col-sm-12" style="text-align:center;">
-				*Laptop brand and software dependent on program. For more information on our programs and their outcomes, go to lafilm.edu/disclosures. Accredited College, ACCSC. VA-Approved by CSAAVE. Member of the Servicemembers Opportunity College Consortium. &#169; 2014 The Los Angeles Film School. All rights reserved. The term "The Los Angeles Film School" and The Los Angeles Film School logo are either service marks or registered service marks of The Los Angeles Film School. View our Privacy Policy.
+				*Laptop brand and software dependent on program. For more information on our programs and their outcomes, go to <a href="http://lafilm.edu/disclosures" target="_blank">lafilm.edu/disclosures</a>. Accredited College, ACCSC. VA-Approved by CSAAVE. Member of the Servicemembers Opportunity College Consortium. © 2014 The Los Angeles Film School. All rights reserved. The term "The Los Angeles Film School" and The Los Angeles Film School logo are either service marks or registered service marks of The Los Angeles Film School. View our <a href="http://lafilm.edu/privacypolicy" target="_blank">Privacy Policy.</a>.
 		</p>
-
 	</footer>
 	<script>
     	
