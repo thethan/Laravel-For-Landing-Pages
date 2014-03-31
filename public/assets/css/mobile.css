@@ -419,6 +419,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc0009', end
 	background-image: url('../img/icons/omni/game.png');
 }
 
+
+
 #business-mobile h1
 {
 	color:#9d81d1;
@@ -460,6 +462,68 @@ background: linear-gradient(to bottom,  rgba(159,131,211,1) 0%,rgba(140,115,186,
 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9f83d3', endColorstr='#8c73ba',GradientType=0 );
 }
+
+/* mobile online Business */
+
+#business-online-mobile .open h4.aboutprogram {
+	background-image: url('../img/open/business/aboutthisprogram.png');
+}
+#business-online-mobile  h4.aboutprogram {
+	background-image: url('../img/icons/omni/business.png');
+}
+
+#business-online-mobile #callus a
+{
+	background-image:url("../img/icons/business.png");
+	background-repeat:no-repeat;
+	background-size:25px;
+	color:#9d81d1;
+}
+
+
+
+#business-online-mobile h1
+{
+	color:#9d81d1;
+}	
+
+#business-online-mobile h5
+{
+	color:#9d81d1;
+}
+#business-online-mobile #callus a
+{
+	background-image: url('../img/icons/callus/business.png'),
+	url('../img/icons/omni/arrows/business.png');
+	background-position: 1% center, 95% center;
+	background-size: 25px 25px, 11px 21px;
+	background-repeat:no-repeat;
+}
+#business-online-mobile #callus a
+{
+	text-indent:32px;
+	color:#9d81d1;
+	font-weight:400;
+}
+#business-online-mobile  .panel .open 
+{
+background: rgb(159,131,211);
+
+background: -moz-linear-gradient(top,  rgba(159,131,211,1) 0%, rgba(140,115,186,1) 100%);
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(159,131,211,1)), color-stop(100%,rgba(140,115,186,1)));
+
+background: -webkit-linear-gradient(top,  rgba(159,131,211,1) 0%,rgba(140,115,186,1) 100%);
+
+background: -o-linear-gradient(top,  rgba(159,131,211,1) 0%,rgba(140,115,186,1) 100%);
+
+background: -ms-linear-gradient(top,  rgba(159,131,211,1) 0%,rgba(140,115,186,1) 100%);
+
+background: linear-gradient(to bottom,  rgba(159,131,211,1) 0%,rgba(140,115,186,1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9f83d3', endColorstr='#8c73ba',GradientType=0 );
+}
+
 
 /* MP */ 	
 /*
@@ -669,4 +733,54 @@ background: -ms-linear-gradient(top,  rgba(223,210,129,1) 0%,rgba(208,196,121,1)
 background: linear-gradient(to bottom,  rgba(223,210,129,1) 0%,rgba(208,196,121,1) 100%);
 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfd281', endColorstr='#d0c479',GradientType=0 );
+}
+
+/* DIGITAL */
+#digital-filmmaking-mobile .icon 
+{
+	background-image: url('../img/icons/film.png');
+}
+#digital-filmmaking-mobile .open h4.aboutprogram {
+	background-image: url('../img/open/film/aboutthisprogram.png');
+}
+
+#digital-filmmaking-mobile h1
+{
+	color:#fd267f;
+}	
+#digital-filmmaking-mobile h5
+{
+	color:#fd267f;
+}
+#digital-filmmaking-mobile #callus a
+{
+	background-image: url('../img/icons/omni/callus/digitalcallus.png'),
+	url('../img/icons/omni/arrows/film.png');
+	background-position: 1% center, 95% center;
+	background-size: 25px 25px, 11px 21px;
+	background-repeat:no-repeat;
+}
+#digital-filmmaking-mobile #callus a
+{
+	text-indent:32px;
+	color:#fd267f;
+	font-weight:400;
+}
+#digital-filmmaking-mobile  .panel .open 
+{
+background: rgb(10,105,243);
+
+background: -moz-linear-gradient(top,  rgba(10,105,243,1) 0%, rgba(7,84,201,1) 100%);
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(10,105,243,1)), color-stop(100%,rgba(7,84,201,1)));
+
+background: -webkit-linear-gradient(top,  rgba(10,105,243,1) 0%,rgba(7,84,201,1) 100%);
+
+background: -o-linear-gradient(top,  rgba(10,105,243,1) 0%,rgba(7,84,201,1) 100%);
+
+background: -ms-linear-gradient(top,  rgba(10,105,243,1) 0%,rgba(7,84,201,1) 100%);
+
+background: linear-gradient(to bottom,  rgba(10,105,243,1) 0%,rgba(7,84,201,1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a69f3', endColorstr='#0754c9',GradientType=0 );
 }

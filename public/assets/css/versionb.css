@@ -92,15 +92,20 @@ careerbox #h3
 
 h1
 {
-  font-size:98px;
+  font-size:126px;
   font-family: 'UniversLTW01-39ThinUltr';
   text-transform: uppercase;
+     padding:0px 0px 0px 10px;
 }
 
-.line-height {
-  line-height: 2em;
-  margin-bottom: 36px;
+.line-height
+{
+	font-size:16px;
+	padding-right:15px;
+	line-height:30px;
+	padding:10px 0px 0px 15px;
 }
+
 
 h2
 {
@@ -275,6 +280,7 @@ form
 }
  #film h1
 {
+	font-size:126px;
 	color:#3fadff;
 }
 
@@ -523,7 +529,7 @@ form
 	}
 #game-production #icon
 	{
-		background-image:url(../img/icons/GameProduction.png);
+		background-image:url(../img/icons/game.png);
 		background-size: contain;
 	}
 #game-production #comp
@@ -580,6 +586,58 @@ form
 		background-size: contain;
 	}
 #mp #comp
+	
+	{
+		background:url(../img/Ad.png)
+		
+	}
+#digital-filmmaking h1
+	{
+		color:#fd267f;
+	}
+
+#digital-filmmaking header h2
+	{
+		color:#ffffff;
+	}
+
+#digital-filmmaking h2
+	{
+		color:#fd267f;
+	}
+	
+#digital-filmmaking #careerbox
+	{
+ 		 color:#30dbd2;
+	}
+	
+#digital-filmmaking h3 span
+	{
+		color:#30dbd2;
+	}
+
+#digital-filmmaking formbox h3 span
+	{
+		color:#30dbd2;
+	}
+	
+#digital-filmmaking #careerbox h3
+	{
+		letter-spacing:-1px;
+		font-size:20px;
+		color:#30dbd2;
+	}
+
+#digital-filmmaking #launchbox
+	{
+		background-color:#fd267f;
+	}
+#digital-filmmaking #icon
+	{
+		background-image:url(../img/icons/digital.png);
+		background-size: contain;
+	}
+#digital-filmmaking #comp
 	
 	{
 		background:url(../img/Ad.png)

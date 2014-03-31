@@ -76,9 +76,9 @@
 				}
 		</style>
     <link href="<?php echo asset('assets/css/bootstrap.min.css');?>" rel="stylesheet">
-    <link href="<?php echo asset('mobile.css" rel="stylesheet');?>">
-    <link href=""<?php echo asset('assets/css/autocomplete.css');?>" rel="stylesheet">
-    <link href=""<?php echo asset('assets/css/form.css');?>" rel="stylesheet">
+    <link href="<?php echo asset('assets/css/mobile.css');?>" rel="stylesheet" >
+    <link href="<?php echo asset('assets/css/autocomplete.css');?>" rel="stylesheet">
+    <link href="<?php echo asset('assets/css/form.css');?>" rel="stylesheet">
     
     
     <script src="https://code.jquery.com/jquery.js"></script>
