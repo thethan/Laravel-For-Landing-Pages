@@ -738,7 +738,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfd281', end
 /* DIGITAL */
 #digital-filmmaking-mobile .icon 
 {
-	background-image: url('../img/icons/dficon.png');
+	/*background-image: url('../img/icons/dficon.png'); */
 }
 #digital-filmmaking-mobile .open h4.aboutprogram {
 	background-image: url('../img/open/digital/aboutthisprogram.png');
