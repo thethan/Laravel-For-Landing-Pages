@@ -330,7 +330,7 @@
 				ACCREDITED BY ACCSC 
                 @if ($slug !== 'digital-filmmaking-online' || $slug !== 'entertainment-business-online-mobile' )
                     &bull;  Financial Aid and Military Benefits available to those who qualify.
-                @else
+                @endif
 
 		</p>
 
