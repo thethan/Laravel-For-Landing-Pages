@@ -54,7 +54,10 @@ class FormersController extends BaseController {
 			$data = 'lead in ';
 			
 			$url = 'http://eleads.lafilm.com:8088/Cmc.Integration.LeadImport.HttpPost/ImportLeadProcessor.aspx';
-			
+			if($input['program'] == 'BSEB-O' || $input['program'] == 'BSDC-O'){
+				$camp = 'MAIN2';}
+				else {$camp = 'MAIN';};
+				
 			$post = '';
 			$post .= 'Leadsource='.$input['leadSource'];
 			$post .= '&Format='.$input['format'];
@@ -66,7 +69,7 @@ class FormersController extends BaseController {
 			$post .= '&Phone='.$input['Phone'];
 			$post .= '&Country='.$input['Country'];
 			$post .= '&PreviousEducation='.$input['PreviousEducation'];
-			$post .= '&leadtype=NEWLEAD&campus=MAIN';
+			$post .= '&leadtype=NEWLEAD&campus='.$camp;
 			
 			
 		

@@ -738,23 +738,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfd281', end
 /* DIGITAL */
 #digital-filmmaking-mobile .icon 
 {
-	background-image: url('../img/icons/film.png');
+	background-image: url('../img/icons/dficon.png');
 }
 #digital-filmmaking-mobile .open h4.aboutprogram {
-	background-image: url('../img/open/film/aboutthisprogram.png');
+	background-image: url('../img/open/digitalfilm/aboutthisprogram.png');
 }
-
+#game-mobile  h4.aboutprogram {
+	background-image: url('../img/digitalfilm.png');
+}
 #digital-filmmaking-mobile h1
 {
-	color:#fd267f;
+	color:#2ed0c7;
 }	
 #digital-filmmaking-mobile h5
 {
-	color:#fd267f;
+	color:#2ed0c7;
 }
 #digital-filmmaking-mobile #callus a
 {
-	background-image: url('../img/icons/omni/callus/digitalcallus.png'),
+	background-image: url('../img/icons/callus/digital.png'),
 	url('../img/icons/omni/arrows/film.png');
 	background-position: 1% center, 95% center;
 	background-size: 25px 25px, 11px 21px;
@@ -770,17 +772,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfd281', end
 {
 background: rgb(10,105,243);
 
-background: -moz-linear-gradient(top,  rgba(10,105,243,1) 0%, rgba(7,84,201,1) 100%);
+background: -moz-linear-gradient(top,  rgba(46,212,203,1) 0%, rgba(41,190,183,1) 100%);
 
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(10,105,243,1)), color-stop(100%,rgba(7,84,201,1)));
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(46,212,203,1)), color-stop(100%,rgba(41,190,183,1)));
 
-background: -webkit-linear-gradient(top,  rgba(10,105,243,1) 0%,rgba(7,84,201,1) 100%);
+background: -webkit-linear-gradient(top,  rgba(46,212,203,1) 0%,rgba(41,190,183,1) 100%);
 
-background: -o-linear-gradient(top,  rgba(10,105,243,1) 0%,rgba(7,84,201,1) 100%);
+background: -o-linear-gradient(top,  rgba(46,212,203,1) 0%,rgba(41,190,183,1) 100%);
 
-background: -ms-linear-gradient(top,  rgba(10,105,243,1) 0%,rgba(7,84,201,1) 100%);
+background: -ms-linear-gradient(top,  rgba(46,212,203,1) 0%,rgba(41,190,183,1)100%);
 
-background: linear-gradient(to bottom,  rgba(10,105,243,1) 0%,rgba(7,84,201,1) 100%);
+background: linear-gradient(to bottom,  rgba(46,212,203,1) 0%,rgba(41,190,183,1) 100%);
 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a69f3', endColorstr='#0754c9',GradientType=0 );
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ed4cb', endColorstr='#29beb7',GradientType=0 );
 }
