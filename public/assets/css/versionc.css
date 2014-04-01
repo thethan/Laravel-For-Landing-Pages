@@ -81,7 +81,7 @@ section.container
   font-family:12px"Univers";
 }
 
-careerbox #h3
+#careerbox h3
 {
 	font-size:32px;
 	font-style:none;
@@ -436,6 +436,7 @@ form
 /* == Entertianment Business === */
 #entertainment-business h1
 	{
+		font-size: 118px;
 		color:#b691f9;
 	}
 

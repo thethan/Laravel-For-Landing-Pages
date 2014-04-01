@@ -172,7 +172,10 @@ class LandingPagesController extends BaseController {
 						return Redirect::to('business-mobile');
 					break;
 					case "entertainment-business-online":
-						return Redirect::to('entertainment-business-mobile-online');
+						return Redirect::to('entertainment-business-online-mobile');
+					break;
+					case "digital-filmmaking":
+						return Redirect::to('digital-filmmaking-mobile');
 					break;
 					case "military":
 						return Redirect::to('omni-mobile');
@@ -203,7 +206,12 @@ class LandingPagesController extends BaseController {
 					case "business-mobile":
 						return Redirect::to('entertainment-business');
 					break;
-
+					case "digital-filmmaking-mobile":
+						return Redirect::to('digital-filmmaking');
+					break;
+					case "entertainment-business-online-mobile":
+						return Redirect::to('entertainment-business-online');
+					break;
 					case "omni-mobile":
 						return Redirect::to('omni');
 					break;

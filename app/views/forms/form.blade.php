@@ -58,7 +58,7 @@
 				break;
 				case 'entertainment-business-online':
 				case 'entertainment-business-online-mobile':
-					$bsdf ='selected';
+					$bsebo ='selected';
 				break;
 				default:
 				break;
