@@ -245,8 +245,7 @@
 						<div id="formbox" class="col-md-12 col-xs-12 col-xs-12">
 							<?php echo $form; ?>
                       </div>
-				<?php
-					if($slug !== 'entertainment-business'){ ?>
+				<?php if($slug !== 'entertainment-business' || $slug !== 'entertainment-business-online' ){	?>
                         <div id="launchbox" class="col-md-12 col-xs-12 center-block hidden-xs">
 						<img src="<?php echo asset('assets/img/ad.png');?> " id="comp" />
 								<h5>
