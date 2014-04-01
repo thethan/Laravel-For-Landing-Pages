@@ -741,9 +741,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfd281', end
 	background-image: url('../img/icons/dficon.png');
 }
 #digital-filmmaking-mobile .open h4.aboutprogram {
-	background-image: url('../img/open/digitalfilm/aboutthisprogram.png');
+	background-image: url('../img/open/digital/aboutthisprogram.png');
 }
-#game-mobile  h4.aboutprogram {
+#digital-filmmaking-mobile  h4.aboutprogram {
 	background-image: url('../img/digitalfilm.png');
 }
 #digital-filmmaking-mobile h1
@@ -765,7 +765,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfd281', end
 #digital-filmmaking-mobile #callus a
 {
 	text-indent:32px;
-	color:#fd267f;
+	color:#2ed0c7;
 	font-weight:400;
 }
 #digital-filmmaking-mobile  .panel .open 
