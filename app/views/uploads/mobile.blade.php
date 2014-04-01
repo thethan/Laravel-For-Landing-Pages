@@ -327,7 +327,14 @@
 		<footer class="row">
 		<p class="col-sm-12" style="text-align:center;">
 			
-				ACCREDITED BY ACCSC &bull; Financial Aid and Military Benefits available to those who qualify.
+				ACCREDITED BY ACCSC &bull; 
+@if ($slug !== 'digital-filmmaking-online' || $slug !== 'entertainment-business-online-mobile' )
+    I have one record!
+@elseif (count($records) > 1)
+    Financial Aid and Military Benefits available to those who qualify.
+@else
+    I don't have any records!
+@endif
 		</p>
 
 		<p class="col-sm-12" style="text-align:center;">
