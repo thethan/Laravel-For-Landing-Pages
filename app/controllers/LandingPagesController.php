@@ -171,6 +171,9 @@ class LandingPagesController extends BaseController {
 					case "entertainment-business":
 						return Redirect::to('business-mobile');
 					break;
+					case "entertainment-business-online":
+						return Redirect::to('entertainment-business-mobile-online');
+					break;
 					case "military":
 						return Redirect::to('omni-mobile');
 					break;

@@ -21,6 +21,8 @@
 			$asra = '';
 			$bsave = '';
 			$bsgpd = '';
+			$bsdf = '';
+			$bsebo = '';
 			
 			
 			if(!$slug){$slug == '';}
@@ -50,6 +52,14 @@
 				case 'recording-arts-mobile':
 					$asra = 'selected';
 				break;
+				case 'digital-filmmaking':
+				case 'digital-filmmaking-mobile':
+					$bsdf ='selected';
+				break;
+				case 'entertainment-business-online':
+				case 'entertainment-business-online-mobile':
+					$bsdf ='selected';
+				break;
 				default:
 				break;
 			}
@@ -61,12 +71,19 @@
                     <span class="selectDefault selectProgram">Program of Interest <span class="caret pull-right"></span></span>
                         <select name="program" id="AdProgramID" class="col-md-12 col-sm-12 selectProgramBox"  required>
                             <option></option>
-                            <option {{$asf}} value="ASF">Film</option>
-                            <option {{$bseb }} value="BSEBF-HOLD">Entertainment Business</option>
-                            <option {{$asra}} value="ASRA">Recording Arts</option>
-                            <option {{$bsgpd}} value="BGSPD-HOLD">Game Production</option>
-                            <option {{$bsave}} value="BSAVE-HOLD">Computer Animation</option>
-                            <option {{$asmp}} value="ASMP">Music Production</option>
+                            <optgroup label="Campus Programs">
+                                <option {{$asf}} value="ASF">Film</option>
+                                
+                                <option {{$bseb }} value="BSEB">Entertainment Business</option>
+                                <option {{$asra}} value="ASRA">Recording Arts</option>
+                                <option {{$bsgpd}} value="BGSPD">Game Production</option>
+                                <option {{$bsave}} value="BSAVE">Computer Animation</option>
+                                <option {{$asmp}} value="ASMP">Music Production</option>
+                           </optgroup>
+                          <optgroup label="Online Programs">
+                          	<option {{$bsdf }} value="BSDC-O">Digital Filmmaking</option>
+                             <option {{$bsebo }} value="BSEB-O">Entertainment Business</option>
+                          </optgroup>
                         </select>
                     </div>
                 </div>

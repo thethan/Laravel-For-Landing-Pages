@@ -377,7 +377,7 @@ form
 		background:url(../img/Ad.png)
 		
 	}
-
+ /* == Recording Arts ==== */
 #recording-arts h1
 	{
 		color:#ed1c24;
@@ -433,7 +433,7 @@ form
 		background:url(../img/Ad.png)
 		
 	}
-
+/* == Entertianment Business === */
 #entertainment-business h1
 	{
 		color:#b691f9;
@@ -487,7 +487,62 @@ form
 		background:url(../img/Ad.png)
 		
 	}
+/* Entertainment Business Online */
+#entertainment-business-online h1
+	{
+		color:#b691f9;
+		text-align:none;
+	}
+
+#entertainment-business-online header h2
+	{
+		color:#ffffff;
+	}
+
+#entertainment-business-online h2
+	{
+		color:#b691f9;
+	}
 	
+#entertainment-business-online #careerbox h3
+	{
+		font-size:32px;
+ 		 color:#b691f9;
+	}
+	
+#entertainment-business-online h3 span, #entertainment-business-online #formSubmission
+	{
+		color:#b691f9;
+	}
+
+#entertainment-business-online formbox h3 span
+	{
+		color:#b691f9;
+	}
+	
+#entertainment-business-online #careerbox h3
+	{
+		letter-spacing:-1px;
+		font-size:20px;
+		color:#b691f9;
+	}
+	
+#entertainment-business-online #launchbox
+	{
+		background-color:#b691f9;
+	}
+#entertainment-business-online #icon
+	{
+		background-image:url(../img/icons/Business.png);
+		background-size: contain;
+	}
+#entertainment-business-online #comp
+	
+	{
+		background:url(../img/Ad.png)
+		
+	}
+/* === Game Productions === */	
 #game-production h1
 	{
 		color:#25b622;

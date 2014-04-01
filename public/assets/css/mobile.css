@@ -419,7 +419,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc0009', end
 	background-image: url('../img/icons/omni/game.png');
 }
 
-
+/* == Entertainment Business  === */
 
 #business-mobile h1
 {
@@ -506,6 +506,110 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9f83d3', end
 	font-weight:400;
 }
 #business-online-mobile  .panel .open 
+{
+background: rgb(159,131,211);
+
+background: -moz-linear-gradient(top,  rgba(159,131,211,1) 0%, rgba(140,115,186,1) 100%);
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(159,131,211,1)), color-stop(100%,rgba(140,115,186,1)));
+
+background: -webkit-linear-gradient(top,  rgba(159,131,211,1) 0%,rgba(140,115,186,1) 100%);
+
+background: -o-linear-gradient(top,  rgba(159,131,211,1) 0%,rgba(140,115,186,1) 100%);
+
+background: -ms-linear-gradient(top,  rgba(159,131,211,1) 0%,rgba(140,115,186,1) 100%);
+
+background: linear-gradient(to bottom,  rgba(159,131,211,1) 0%,rgba(140,115,186,1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9f83d3', endColorstr='#8c73ba',GradientType=0 );
+}
+
+/* === Entetaintment business  Pnline===*/
+#entertainment-business-online-mobile h1
+{
+	color:#9d81d1;
+}	
+
+#entertainment-business-online-mobile h5
+{
+	color:#9d81d1;
+}
+#entertainment-business-online-mobile #callus a
+{
+	background-image: url('../img/icons/callus/business.png'),
+	url('../img/icons/omni/arrows/business.png');
+	background-position: 1% center, 95% center;
+	background-size: 25px 25px, 11px 21px;
+	background-repeat:no-repeat;
+}
+#entertainment-business-online-mobile #callus a
+{
+	text-indent:32px;
+	color:#9d81d1;
+	font-weight:400;
+}
+#entertainment-business-online-mobile  .panel .open 
+{
+background: rgb(159,131,211);
+
+background: -moz-linear-gradient(top,  rgba(159,131,211,1) 0%, rgba(140,115,186,1) 100%);
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(159,131,211,1)), color-stop(100%,rgba(140,115,186,1)));
+
+background: -webkit-linear-gradient(top,  rgba(159,131,211,1) 0%,rgba(140,115,186,1) 100%);
+
+background: -o-linear-gradient(top,  rgba(159,131,211,1) 0%,rgba(140,115,186,1) 100%);
+
+background: -ms-linear-gradient(top,  rgba(159,131,211,1) 0%,rgba(140,115,186,1) 100%);
+
+background: linear-gradient(to bottom,  rgba(159,131,211,1) 0%,rgba(140,115,186,1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9f83d3', endColorstr='#8c73ba',GradientType=0 );
+}
+
+/* mobile online Business */
+
+#entertainment-business-online-mobile.open h4.aboutprogram {
+	background-image: url('../img/open/business/aboutthisprogram.png');
+}
+#entertainment-business-online-mobile  h4.aboutprogram {
+	background-image: url('../img/icons/omni/business.png');
+}
+
+#entertainment-business-online-mobile #callus a
+{
+	background-image:url("../img/icons/business.png");
+	background-repeat:no-repeat;
+	background-size:25px;
+	color:#9d81d1;
+}
+
+
+
+#business-online-mobile h1, #entertainment-business-online-mobile h1
+{
+	color:#9d81d1;
+}	
+
+#business-online-mobile h5, #entertainment-business-online-mobile h5
+{
+	color:#9d81d1;
+}
+#business-online-mobile #callus a, #entertainment-business-online-mobile #callus a
+{
+	background-image: url('../img/icons/callus/business.png'),
+	url('../img/icons/omni/arrows/business.png');
+	background-position: 1% center, 95% center;
+	background-size: 25px 25px, 11px 21px;
+	background-repeat:no-repeat;
+}
+#entertainment-business-online-mobile #callus a
+{
+	text-indent:32px;
+	color:#9d81d1;
+	font-weight:400;
+}
+#entertainment-business-online-mobile  .panel .open 
 {
 background: rgb(159,131,211);
 

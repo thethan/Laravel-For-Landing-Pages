@@ -283,7 +283,7 @@
       <div class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
        	 	<h4 class="careers">
-            <?php if($slug == 'business-mobile'){ ?>	
+            <?php if($slug == 'business-mobile' || $slug == 'entertainment-business-online-mobile'){ ?>	
         		Networking Opportunities
                	<?php } else { ?>
                 Careers
