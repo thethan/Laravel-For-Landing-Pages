@@ -569,7 +569,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9f83d3', end
 
 /* mobile online Business */
 
-#entertainment-business-online-mobile.open h4.aboutprogram {
+#entertainment-business-online-mobile .open h4.aboutprogram {
 	background-image: url('../img/open/business/aboutthisprogram.png');
 }
 #entertainment-business-online-mobile  h4.aboutprogram {
@@ -584,7 +584,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9f83d3', end
 	color:#9d81d1;
 }
 
-
+#entertainment-business-online-mobile h4.gearandsoftware, #business-mobile h4.gearandsoftware {
+		background-image:url("../img/network.png");
+	}
+#entertainment-business-online-mobile .open h4.gearandsoftware, #business-mobile .open h4.gearandsoftware {
+		background-image:url("../img/networkopen.png");
+	}
+#entertainment-business-online-mobile h4.campus, #digital-filmmaking-mobile h4.campus {
+		background-image:url("../img/online.png");
+	}
+#entertainment-business-online-mobile .open h4.campus, #digital-filmmaking-mobile .open h4.campus {
+		background-image:url("../img/onlineopen.png");
+	}
 
 #business-online-mobile h1, #entertainment-business-online-mobile h1
 {

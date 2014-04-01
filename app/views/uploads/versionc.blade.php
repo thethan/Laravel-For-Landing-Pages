@@ -225,18 +225,20 @@
 						<div id="formbox" class="col-md-12 col-xs-12 col-xs-12">
 							<?php echo $form; ?>
                       </div>
-				<?php if($slug !== 'entertainment-business' || $slug !== 'entertainment-business-online' ){	?>
+				<?php if($slug == 'entertainment-business' || $slug == 'entertainment-business-online' ){	?>
                         
-                        <div id="launchbox" class="col-md-12 col-xs-12 center-block">
+                    <?php } else {  ?>
+                    <div id="launchbox" class="col-md-12 col-xs-12 center-block hidden-xs">
 						<img src="<?php echo asset('assets/img/ad.png');?> " id="comp" />
 								<h5>
 									A Laptop for Every Student*
 								</h5>
 										<h6> 	We outfit you with a laptop computer and software package so you can 			take your work anywhere! 
 										</h6>
-							</div>
-               <?php } ?>
-			</aside>
+							</div> 
+					<?php } ?>			
+                    
+                   </aside>
 
   				<article class="col-md-6 col-lg-7 col-sm-5  ">
 						<h1>

@@ -264,7 +264,11 @@
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
        	 	<h4 class="gearandsoftware">
 	          
-        	 	Gear and Software
+    @if ($slug == 'business-mobile' || $slug == 'entertainment-business-online-mobile' )
+       Networking Opportunities
+    @else
+        Gears and Software
+    @endif
            </h4>
         </a>
       </div>
@@ -284,7 +288,7 @@
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
        	 	<h4 class="careers">
             <?php if($slug == 'business-mobile' || $slug == 'entertainment-business-online-mobile'){ ?>	
-        		Networking Opportunities
+        		Career Possibilities
                	<?php } else { ?>
                 Careers
                 <?php } ?>
@@ -307,7 +311,11 @@
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
        	 	<h4 class="campus">
 				 
-        	 	Campus
+      @if ($slug !== 'digital-filmmaking-mobile' || $slug !== 'entertainment-business-online-mobile' )
+        Online Education
+    @else
+        Campus
+    @endif
            </h4>
         </a>
       </div>
@@ -325,15 +333,15 @@
 </div>
 </article>
 		<footer class="row">
-		<p class="col-sm-12" style="text-align:center;">
-			
-				ACCREDITED BY ACCSC 
-@if ($slug !== 'digital-filmmaking-mobile' || $slug !== 'entertainment-business-online-mobile' )
-    &bull;  Financial Aid and Military Benefits available to those who qualify.
-@else
-    
-@endif
-		</p>
+            <p class="col-sm-12" style="text-align:center;">
+                
+          ACCREDITED BY ACCSC 
+    @if ($slug == 'digital-filmmaking-mobile' || $slug == 'entertainment-business-online-mobile' )
+        
+    @else
+        &bull;  Financial Aid and Military Benefits available to those who qualify.
+    @endif
+            </p>
 
 		<p class="col-sm-12" style="text-align:center;">
 				*Laptop brand and software dependent on program. For more information on our programs and their outcomes, go to <a href="http://lafilm.edu/disclosures" target="_blank">lafilm.edu/disclosures</a>. Accredited College, ACCSC. VA-Approved by CSAAVE. Member of the Servicemembers Opportunity College Consortium. © 2014 The Los Angeles Film School. All rights reserved. The term "The Los Angeles Film School" and The Los Angeles Film School logo are either service marks or registered service marks of The Los Angeles Film School. View our <a href="http://lafilm.edu/privacypolicy" target="_blank">Privacy Policy.</a>.

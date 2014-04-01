@@ -476,7 +476,7 @@ form
 	
 #entertainment-business #launchbox
 	{
-		background-color:#b691f9;
+		display:none;
 	}
 #entertainment-business #icon
 	{
@@ -532,7 +532,7 @@ form
 	
 #entertainment-business-online #launchbox
 	{
-		background-color:#b691f9;
+		display:none;
 	}
 #entertainment-business-online #icon
 	{

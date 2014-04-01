@@ -521,16 +521,10 @@ form
 		color:#b691f9;
 	}
 	
-#entertainment-business-online #careerbox h3
-	{
-		letter-spacing:-1px;
-		font-size:20px;
-		color:#b691f9;
-	}
-	
+
 #entertainment-business-online #launchbox
 	{
-		background-color:#b691f9;
+		display:none;
 	}
 #entertainment-business-online #icon
 	{
